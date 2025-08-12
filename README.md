@@ -48,3 +48,12 @@ vjrcuidy.us-west-1.clawcloudrun.com
 原理：UnhookWindowsHookEx，GetThreadDesktop，GetGUIThreadInfo，OpenThread，Thread32First，Thread32Next，GetCurrentThreadId，GetProcAddress，EnumProcesses，GetCurrentProcessId，CreateToolhelp32Snapshot，CloseHandle
 
 作用：允许键盘[未经验证]
+## 问题说明
+### 红蜘蛛问题
+<img width="652" height="386" alt="11" src="https://github.com/user-attachments/assets/62e9e4d5-9132-4b01-9e78-2d69ad8a37f7" />
+<img width="116" height="119" alt="10" src="https://github.com/user-attachments/assets/079ad09f-a746-43b9-98af-77f3939115c0" />
+
+#### 解决方法
+<img width="114" height="65" alt="13" src="https://github.com/user-attachments/assets/74ec70f1-e7c7-440e-8485-e9d71241d3de" />
+
+点击控屏图标多几次
