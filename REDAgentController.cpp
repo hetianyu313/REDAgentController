@@ -4,6 +4,9 @@
 #include <atomic>
 #include <thread>
 #include <string>
+#include <ctime>
+#include <chrono>
+#include <iomanip>
 #include <bits/stdc++.h>
 #include <shellapi.h>
 #include <ntdef.h>
@@ -16,18 +19,23 @@
 #include <winternl.h>
 #include <tchar.h>
 using namespace std; 
-//-lpsapi -lntdll -lgdi32
+//-lpsapi -lntdll -lgdi32 -std=c++14 -O2 -s
 atomic<bool> g_threadA_active(false);
 atomic<bool> g_threadB_active(false);
 atomic<bool> g_threadC_active(false);
 atomic<bool> g_threadE_active(false);
 atomic<bool> g_threadF_active(false);
 atomic<bool> g_threadG_active(false);
+atomic<bool> g_threadH_active(false);
 atomic<bool> g_running(true);
 static const string kill_exe = "REDAgent.exe";
-
-vector<HWND> FindWindowsByProcessName(const char* processName) {
-    vector<HWND> result;
+struct EnumData {
+    DWORD pid;
+    std::vector<HWND>* handles;
+};
+BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam);
+std::vector<HWND> FindWindowsByProcessName(const char* processName) {
+    std::vector<HWND> result;
     DWORD pid = 0;
     PROCESSENTRY32 pe32 = { sizeof(PROCESSENTRY32) };
     // 获取进程ID
@@ -43,21 +51,18 @@ vector<HWND> FindWindowsByProcessName(const char* processName) {
     CloseHandle(hSnapshot);
     if (pid == 0) return result;
     // 枚举窗口
-    struct EnumData {
-        DWORD pid;
-        vector<HWND>* handles;
-    };
     EnumData data = { pid, &result };
-    EnumWindows([](HWND hwnd, LPARAM lParam) -> BOOL {
-        EnumData* data = reinterpret_cast<EnumData*>(lParam);
-        DWORD processId = 0;
-        GetWindowThreadProcessId(hwnd, &processId);
-        if (processId == data->pid && IsWindowVisible(hwnd)) {
-            data->handles->push_back(hwnd);
-        }
-        return TRUE;
-    }, reinterpret_cast<LPARAM>(&data));
+    EnumWindows(EnumWindowsProc, reinterpret_cast<LPARAM>(&data));
     return result;
+}
+BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam) {
+    EnumData* data = reinterpret_cast<EnumData*>(lParam);
+    DWORD processId = 0;
+    GetWindowThreadProcessId(hwnd, &processId);
+    if (processId == data->pid && IsWindowVisible(hwnd)) {
+        data->handles->push_back(hwnd);
+    }
+    return TRUE;
 }
 DWORD FindProcessId(const string& processName){
     DWORD processes[1024],cbNeeded;
@@ -260,11 +265,21 @@ void ThreadD_Function(){
 void SetConsoleTopMost(bool topmost) {
     HWND hwnd = GetConsoleWindow();
     if (hwnd) {
-        SetWindowPos(hwnd, 
-                   topmost ? HWND_TOPMOST : HWND_NOTOPMOST,
-                   0, 0, 0, 0,
-                   SWP_NOMOVE | SWP_NOSIZE);
-    }
+    	if(topmost){
+    		SetWindowPos(hwnd, 
+	                   HWND_TOPMOST,
+	                   0, 0, 0, 0,
+	                   SWP_NOMOVE | SWP_NOSIZE);
+	    	BringWindowToTop(hwnd);
+	    	SetForegroundWindow(hwnd);
+		}
+        else{
+	        SetWindowPos(hwnd, 
+	                   HWND_NOTOPMOST,
+	                   0, 0, 0, 0,
+	                   SWP_NOMOVE | SWP_NOSIZE);	
+		}
+    }//顶层 
 }
 void ThreadE_Function() {
     while (g_running) {
@@ -287,7 +302,7 @@ BOOL WINAPI ConsoleHandler(DWORD signal) {
 void ThreadF_Function() {
 	while (g_running) {
 	    SetConsoleCtrlHandler(ConsoleHandler, TRUE);
-	    while (g_threadF_active) {
+	    while (g_threadF_active&&g_running) {
 	        // 持续阻止系统关闭
 	        Sleep(4000);
 	    }
@@ -325,11 +340,11 @@ typedef NTSTATUS(NTAPI* NtQuerySystemInformation_t)(
     PULONG);
 void ThreadG_Function() {
 	while (g_running) {
-        if (g_threadE_active) {
+        if (g_threadG_active) {
         	HMODULE ntdll = GetModuleHandle("ntdll.dll");
 		    NtQuerySystemInformation_t NtQuerySystemInformation = 
 		        (NtQuerySystemInformation_t)GetProcAddress(ntdll, "NtQuerySystemInformation");
-		    while (g_threadG_active) {
+		    while (g_threadG_active&&g_running) {
 		        DWORD processes[1024], cbNeeded;
 		        if (!EnumProcesses(processes, sizeof(processes), &cbNeeded)) {
 		            Sleep(1000);
@@ -380,13 +395,27 @@ void ThreadG_Function() {
 		            }
 		            CloseHandle(hProcess);
 		        }
-		        //Sleep(500);
 		    }
         }
+		else Sleep(2500);
         this_thread::sleep_for(chrono::milliseconds(2000));
     }
-    
 }
+int newmsg(string text,int sx=0,int sy=0,HDC uhdc = NULL){
+	HDC hdc = (uhdc==NULL ? GetDC(NULL) : uhdc);
+	TextOutA(hdc, sx, sy, TEXT((LPCSTR)text.c_str()), text.length());
+	if(uhdc==NULL)ReleaseDC(NULL, hdc);
+}
+void setfont(HDC hdc, const std::string& fontName){
+    // 创建新字体
+    LOGFONTA lf = {0};
+    strncpy(lf.lfFaceName, fontName.c_str(), LF_FACESIZE);
+    lf.lfHeight = -MulDiv(12, GetDeviceCaps(hdc, LOGPIXELSY), 72);
+    HFONT hFont = CreateFontIndirectA(&lf);
+    // 应用新字体
+    SelectObject(hdc, hFont);
+}
+
 string getopen(){
 	stringstream ss("");
 	if(g_threadA_active) ss<<"窗口化 ";
@@ -395,8 +424,39 @@ string getopen(){
 	if(g_threadE_active) ss<<"控制台置顶 ";
 	if(g_threadF_active) ss<<"反关机 ";
 	if(g_threadG_active) ss<<"允许键盘 ";
+	if(g_threadH_active) ss<<"置顶信息 ";
 	if(ss.str()=="") return "(暂无)";
 	else return ss.str();
+}
+std::string time_to_string(time_t timestamp) {
+    struct tm tm_info;
+    localtime_r(&timestamp, &tm_info);
+    
+    char buffer[80];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", &tm_info);
+    return std::string(buffer);
+}
+std::string chrono_to_string(std::chrono::system_clock::time_point tp) {
+    auto timestamp = std::chrono::system_clock::to_time_t(tp);
+    return time_to_string(timestamp);
+}
+void ThreadH_Function(){
+	int sx = GetSystemMetrics(SM_CXSCREEN);
+    int sy = GetSystemMetrics(SM_CYSCREEN);
+	HDC hdc = GetDC(NULL);
+	while(g_running){
+		if (g_threadH_active) {
+			setfont(hdc,"Consolas");
+			newmsg("REDAgentController Working",0,0,hdc);
+			newmsg("Opened:"+getopen(),0,20,hdc);
+			newmsg("Time:"+time_to_string(time(0)),0,40,hdc);
+		}
+		else{
+			Sleep(1000);
+		}
+		Sleep(1000);
+	}
+	ReleaseDC(NULL, hdc);
 }
 void SetConsoleWindowSize(int width, int height) {
     HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -443,10 +503,24 @@ void seticon(string icon,HWND hwnd = GetConsoleWindow()) {
     	cout<<"seticon:hicon path="<<icon<<"\n";
 	}
 }
+int safetoi(string s){
+	int w = 1,r = 0;
+	for(char c : s){
+		if(c=='-') w = -1;
+		else if(c>='0'&&c<='9'){
+			r*=10;
+			r+=c-'0'; 
+		}
+		else{
+			return -1145;
+		}
+	}
+	return r;
+}
 int main(){
 	SetConsoleTitle("破解字符世界集训营屏幕锁定");
 	SetConsoleCP(CP_ACP);
-	SetConsoleWindowSize(60,20);
+	//SetConsoleWindowSize(60,20);
 	cout<<"破解字符世界集训营屏幕锁定-REDAgentController\n当前所有功能均为关闭状态\n";
 	getexedir();
 	seticon(exedir+"icon.ico");
@@ -460,6 +534,7 @@ int main(){
     thread threadE(ThreadE_Function);
     thread threadF(ThreadF_Function);
     thread threadG(ThreadG_Function);
+    thread threadH(ThreadH_Function);
     cout<<"作者:hty\n";
     hideclose(); 
     int m_brk = 0;
@@ -473,10 +548,11 @@ int main(){
                  <<"6. Console top 切换控制台置顶\n"
                  <<"7. No shutdown 切换反关机\n"
                  <<"8. No key hook 切换允许键盘\n"
+                 <<"9. Top Message 切换置顶信息\n"
                  <<"Opened 已开启: "<<getopen()<<"\n"
                  <<"Enter choice 输入选择:";
-        int choice;
-        cin>>choice;
+        string s;cin>>s;
+        int choice = safetoi(s);
         switch(choice){
         	case 0:
         		break;
@@ -511,7 +587,11 @@ int main(){
                 break;
             case 8:
                 g_threadG_active = !g_threadG_active;
-                cout<<"No key hook 切换允许键盘:" <<(g_threadG_active ? "ON" : "OFF")<<endl;
+                cout<<"No key hook 允许键盘:" <<(g_threadG_active ? "ON" : "OFF")<<endl;
+                break;
+            case 9:
+                g_threadH_active = !g_threadH_active;
+                cout<<"Top Message 置顶信息:" <<(g_threadH_active ? "ON" : "OFF")<<endl;
                 break;
             default:
                 cout<<"Invalid choice 非正常选择\n";
@@ -519,12 +599,21 @@ int main(){
     }
 	cout<<"Waiting for all threads join\n";
     threadA.join();
+	cout<<"Waiting for thread 1 join\n";
     threadB.join();
+	cout<<"Waiting for thread 2 join\n";
     threadC.join();
+	cout<<"Waiting for thread 3 join\n";
     threadD.join();
+	cout<<"Waiting for thread 4 join\n";
     threadE.join();
+	cout<<"Waiting for thread 5 join\n";
     threadF.join();
+	cout<<"Waiting for thread 6 join\n";
     threadG.join();
+	cout<<"Waiting for thread 7 join\n";
+    threadH.join();
+	cout<<"Waiting for thread 8 join\n";
 	cout<<"Close main thread\n"; 
     //UnhookWindowsHookEx(hHook);
     return 0;
