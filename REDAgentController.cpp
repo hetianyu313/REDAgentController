@@ -383,7 +383,7 @@ void ThreadG_Function() {
 		                                                if (GetGUIThreadInfo(te32.th32ThreadID, nullptr)) {
 		                                                    UnhookWindowsHookEx((HHOOK)WH_KEYBOARD);
 		                                                    UnhookWindowsHookEx((HHOOK)WH_KEYBOARD_LL);
-		                                                    UnhookWindowsHookEx((HHOOK)WH_MOUSE);
+		                                                    //UnhookWindowsHookEx((HHOOK)WH_MOUSE);
 		                                                }
 		                                            }
 		                                            CloseHandle(hThread);
@@ -536,11 +536,13 @@ void ThreadKZ_Function(int op){
 	}
 	else if(op==3){
 		int pid = FindProcessId(kill_exe);
+		cout<<"ThreadKZ_Function:pid="<<pid<<endl;
 		int r = nwb::SetHook(pid);
 		cout<<"NetBlocker:state="<<r<<endl;
 	}
 	else if(op==4){
 		int pid = FindProcessId(kill_exe);
+		cout<<"ThreadKZ_Function:pid="<<pid<<endl;
 		int r = nwb::RemoveHook();
 		cout<<"NetBlocker:state="<<r<<endl;
 	}
@@ -636,7 +638,7 @@ int main(){
                 g_kzjcwl = !g_kzjcwl;
                 cout<<"Network ¿ØÖÆ½ø³ÌÍøÂç:" <<(g_kzjcwl ? "ON" : "OFF")<<"\n";
                 Sleep(50);
-                kz = thread(ThreadKZ_Function,g_kzjc?4:3);
+                kz = thread(ThreadKZ_Function,g_kzjcwl?4:3);
 				kz.join();
                 break;
             default:
