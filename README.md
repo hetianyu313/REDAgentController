@@ -48,6 +48,10 @@ vjrcuidy.us-west-1.clawcloudrun.com
 原理：UnhookWindowsHookEx，GetThreadDesktop，GetGUIThreadInfo，OpenThread，Thread32First，Thread32Next，GetCurrentThreadId，GetProcAddress，EnumProcesses，GetCurrentProcessId，CreateToolhelp32Snapshot，CloseHandle
 
 作用：允许键盘[未经验证]
+### 映像劫持
+原理：system
+
+让他永久消失
 ## 问题说明
 ### 红蜘蛛问题
 <img width="652" height="386" alt="11" src="https://github.com/user-attachments/assets/62e9e4d5-9132-4b01-9e78-2d69ad8a37f7" />
