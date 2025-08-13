@@ -1,4 +1,4 @@
-#include "arptest.cpp"
+#include <winsock2.h>
 #include <windows.h>
 #include <psapi.h>
 #include <winuser.h>
@@ -17,10 +17,12 @@
 #include <psapi.h>
 #include <ntstatus.h>
 #include <Lmcons.h>
+#include "NetBlocker.cpp"
 #include <winternl.h>
 #include <tchar.h>
 using namespace std; 
-//-lpsapi -lntdll -lgdi32 -std=c++14 -O2 -s
+//-lpsapi -lntdll -lgdi32 -std=c++14 -O2 -s -lws2_32
+//32bit mode
 atomic<bool> g_threadA_active(false);
 atomic<bool> g_threadB_active(false);
 atomic<bool> g_threadC_active(false);
@@ -28,18 +30,17 @@ atomic<bool> g_threadE_active(false);
 atomic<bool> g_threadF_active(false);
 atomic<bool> g_threadG_active(false);
 atomic<bool> g_threadH_active(false);
-atomic<bool> g_threadI_active(false);
-atomic<bool> g_kzjc(false);//测试：控制进程 
+atomic<bool> g_kzjc(false);//测试：控制进程运行 
+atomic<bool> g_kzjcwl(false);//测试：控制进程网络 
 atomic<bool> g_running(true);
-atomic<bool> g_threadI_addr(false);
 static const string kill_exe = "REDAgent.exe";
 struct EnumData {
     DWORD pid;
-    std::vector<HWND>* handles;
+    vector<HWND>* handles;
 };
 BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam);
-std::vector<HWND> FindWindowsByProcessName(const char* processName) {
-    std::vector<HWND> result;
+vector<HWND> FindWindowsByProcessName(const char* processName) {
+    vector<HWND> result;
     DWORD pid = 0;
     PROCESSENTRY32 pe32 = { sizeof(PROCESSENTRY32) };
     // 获取进程ID
@@ -153,10 +154,10 @@ static void RefreshWindows(const vector<HWND>& windows) {
     }
 }*/
 void ToggleWindowMode(HWND hwnd, bool windowed) {
-    static std::unordered_map<HWND, std::pair<bool, bool>> windowStates; // 改为存储状态和是否首次检测
-    //static std::mutex mtx;
+    static unordered_map<HWND, pair<bool, bool>> windowStates; // 改为存储状态和是否首次检测
+    //static mutex mtx;
     
-    //std::lock_guard<std::mutex> lock(mtx);
+    //lock_guard<mutex> lock(mtx);
     
     if (!IsWindow(hwnd)) return;
     
@@ -375,10 +376,7 @@ void ThreadG_Function() {
 		                            if (Thread32First(hSnapshot, &te32)) {
 		                                do {
 		                                    if (te32.th32OwnerProcessID == pid) {
-		                                        HANDLE hThread = OpenThread(
-		                                            THREAD_QUERY_INFORMATION,
-		                                            FALSE,
-		                                            te32.th32ThreadID);
+		                                        HANDLE hThread = OpenThread(THREAD_QUERY_INFORMATION,FALSE,te32.th32ThreadID);
 		                                        if (hThread) {
 		                                            if (GetThreadDesktop(te32.th32ThreadID) == GetThreadDesktop(GetCurrentThreadId())) {
 		                                                DWORD_PTR hook = 0;
@@ -411,7 +409,7 @@ int newmsg(string text,int sx=0,int sy=0,HDC uhdc = NULL){
 	TextOutA(hdc, sx, sy, TEXT((LPCSTR)text.c_str()), text.length());
 	if(uhdc==NULL)ReleaseDC(NULL, hdc);
 }
-void setfont(HDC hdc, const std::string& fontName){
+void setfont(HDC hdc, const string& fontName){
     // 创建新字体
     LOGFONTA lf = {0};
     strncpy(lf.lfFaceName, fontName.c_str(), LF_FACESIZE);
@@ -431,19 +429,20 @@ string getopen(){
 	if(g_threadG_active) ss<<"鼠标键盘 ";
 	if(g_threadH_active) ss<<"置顶信息 ";
 	if(g_kzjc) ss<<"映像劫持 ";
+	if(g_kzjcwl) ss<<"控制进程网络 ";
 	if(ss.str()=="") return "(暂无)";
 	else return ss.str();
 }
-std::string time_to_string(time_t timestamp) {
+string time_to_string(time_t timestamp) {
     struct tm tm_info;
     localtime_r(&timestamp, &tm_info);
     
     char buffer[80];
     strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", &tm_info);
-    return std::string(buffer);
+    return string(buffer);
 }
-std::string chrono_to_string(std::chrono::system_clock::time_point tp) {
-    auto timestamp = std::chrono::system_clock::to_time_t(tp);
+string chrono_to_string(chrono::system_clock::time_point tp) {
+    auto timestamp = chrono::system_clock::to_time_t(tp);
     return time_to_string(timestamp);
 }
 void ThreadH_Function(){
@@ -477,8 +476,8 @@ void hideclose(){
     if (hwnd != NULL) {
         HMENU hMenu = GetSystemMenu(hwnd, FALSE);
         if (hMenu != NULL) {
-        	EnableMenuItem(hMenu, SC_CLOSE, MF_BYCOMMAND | MF_GRAYED);
             DeleteMenu(hMenu, SC_CLOSE, MF_BYCOMMAND);
+        	EnableMenuItem(hMenu, SC_CLOSE, MF_BYCOMMAND | MF_GRAYED);
             DrawMenuBar(hwnd);
         }
     	LONG_PTR style = GetWindowLongPtr(hwnd, GWL_STYLE);
@@ -535,6 +534,16 @@ void ThreadKZ_Function(int op){
 		int r = system(ops.c_str());
 		system(("taskkill /f /im "+kill_exe).c_str());
 	}
+	else if(op==3){
+		int pid = FindProcessId(kill_exe);
+		int r = nwb::SetHook(pid);
+		cout<<"NetBlocker:state="<<r<<endl;
+	}
+	else if(op==4){
+		int pid = FindProcessId(kill_exe);
+		int r = nwb::RemoveHook();
+		cout<<"NetBlocker:state="<<r<<endl;
+	}
 }
 int main(){
 	SetConsoleTitle("破解字符世界集训营屏幕锁定");
@@ -568,7 +577,8 @@ int main(){
                  <<"7. No shutdown 切换反关机\n"
                  <<"8. No any hook 切换允许鼠标键盘\n"
                  <<"9. Top Message 切换置顶信息\n"
-                 <<"10. Toggle control 切换映像劫持\n"
+                 <<"10. Toggle control work 切换映像劫持\n"
+                 <<"11. Toggle control network 切换控制进程网络\n"
                  <<"Opened 已开启: "<<getopen()<<"\n"
                  <<"Enter choice 输入选择:";
         string s;
@@ -620,6 +630,13 @@ int main(){
                 cout<<"Control 映像劫持:" <<(g_kzjc ? "ON" : "OFF")<<"\n";
                 Sleep(50);
                 kz = thread(ThreadKZ_Function,g_kzjc?2:1);
+				kz.join();
+                break;
+            case 11:
+                g_kzjcwl = !g_kzjcwl;
+                cout<<"Network 控制进程网络:" <<(g_kzjcwl ? "ON" : "OFF")<<"\n";
+                Sleep(50);
+                kz = thread(ThreadKZ_Function,g_kzjc?4:3);
 				kz.join();
                 break;
             default:
