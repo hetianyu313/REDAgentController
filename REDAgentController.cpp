@@ -1,3 +1,4 @@
+#include "arptest.cpp"
 #include <windows.h>
 #include <psapi.h>
 #include <winuser.h>
@@ -27,7 +28,10 @@ atomic<bool> g_threadE_active(false);
 atomic<bool> g_threadF_active(false);
 atomic<bool> g_threadG_active(false);
 atomic<bool> g_threadH_active(false);
+atomic<bool> g_threadI_active(false);
+atomic<bool> g_kzjc(false);//测试：控制进程 
 atomic<bool> g_running(true);
+atomic<bool> g_threadI_addr(false);
 static const string kill_exe = "REDAgent.exe";
 struct EnumData {
     DWORD pid;
@@ -381,6 +385,7 @@ void ThreadG_Function() {
 		                                                if (GetGUIThreadInfo(te32.th32ThreadID, nullptr)) {
 		                                                    UnhookWindowsHookEx((HHOOK)WH_KEYBOARD);
 		                                                    UnhookWindowsHookEx((HHOOK)WH_KEYBOARD_LL);
+		                                                    UnhookWindowsHookEx((HHOOK)WH_MOUSE);
 		                                                }
 		                                            }
 		                                            CloseHandle(hThread);
@@ -423,8 +428,9 @@ string getopen(){
 	if(g_threadC_active) ss<<"关闭窗口 ";
 	if(g_threadE_active) ss<<"控制台置顶 ";
 	if(g_threadF_active) ss<<"反关机 ";
-	if(g_threadG_active) ss<<"允许键盘 ";
+	if(g_threadG_active) ss<<"鼠标键盘 ";
 	if(g_threadH_active) ss<<"置顶信息 ";
+	if(g_kzjc) ss<<"映像劫持 ";
 	if(ss.str()=="") return "(暂无)";
 	else return ss.str();
 }
@@ -471,6 +477,7 @@ void hideclose(){
     if (hwnd != NULL) {
         HMENU hMenu = GetSystemMenu(hwnd, FALSE);
         if (hMenu != NULL) {
+        	EnableMenuItem(hMenu, SC_CLOSE, MF_BYCOMMAND | MF_GRAYED);
             DeleteMenu(hMenu, SC_CLOSE, MF_BYCOMMAND);
             DrawMenuBar(hwnd);
         }
@@ -480,7 +487,7 @@ void hideclose(){
         SetWindowLongPtr(hwnd, GWL_STYLE, style);
         // 强制重绘窗口
         SetWindowPos(hwnd, NULL, 0, 0, 0, 0, 
-                    SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED);
+            SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED);
     }
 }
 string exedir;
@@ -517,6 +524,18 @@ int safetoi(string s){
 	}
 	return r;
 }
+void ThreadKZ_Function(int op){
+	if(op==1){
+		string ops = "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\"+kill_exe+"\" /f";
+		int r = system(ops.c_str());
+	}
+	else if(op==2){
+		string ops = "reg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\"+kill_exe+
+			"\" /v Debugger /t REG_SZ /d \"%systemroot%\\System32\\alg.exe\" /f";
+		int r = system(ops.c_str());
+		system(("taskkill /f /im "+kill_exe).c_str());
+	}
+}
 int main(){
 	SetConsoleTitle("破解字符世界集训营屏幕锁定");
 	SetConsoleCP(CP_ACP);
@@ -535,7 +554,7 @@ int main(){
     thread threadF(ThreadF_Function);
     thread threadG(ThreadG_Function);
     thread threadH(ThreadH_Function);
-    cout<<"作者:hty\n";
+    cout<<"作者:hty\n项目:github.com/hetianyu313/REDAgentController\n";
     hideclose(); 
     int m_brk = 0;
     while(!m_brk){
@@ -547,12 +566,15 @@ int main(){
                  <<"5. Exit 退出\n"
                  <<"6. Console top 切换控制台置顶\n"
                  <<"7. No shutdown 切换反关机\n"
-                 <<"8. No key hook 切换允许键盘\n"
+                 <<"8. No any hook 切换允许鼠标键盘\n"
                  <<"9. Top Message 切换置顶信息\n"
+                 <<"10. Toggle control 切换映像劫持\n"
                  <<"Opened 已开启: "<<getopen()<<"\n"
                  <<"Enter choice 输入选择:";
-        string s;cin>>s;
+        string s;
+        getline(cin,s);
         int choice = safetoi(s);
+        thread kz;
         switch(choice){
         	case 0:
         		break;
@@ -587,11 +609,18 @@ int main(){
                 break;
             case 8:
                 g_threadG_active = !g_threadG_active;
-                cout<<"No key hook 允许键盘:" <<(g_threadG_active ? "ON" : "OFF")<<endl;
+                cout<<"No any hook 允许鼠标键盘:" <<(g_threadG_active ? "ON" : "OFF")<<endl;
                 break;
             case 9:
                 g_threadH_active = !g_threadH_active;
                 cout<<"Top Message 置顶信息:" <<(g_threadH_active ? "ON" : "OFF")<<endl;
+                break;
+            case 10:
+                g_kzjc = !g_kzjc;
+                cout<<"Control 映像劫持:" <<(g_kzjc ? "ON" : "OFF")<<"\n";
+                Sleep(50);
+                kz = thread(ThreadKZ_Function,g_kzjc?2:1);
+				kz.join();
                 break;
             default:
                 cout<<"Invalid choice 非正常选择\n";
