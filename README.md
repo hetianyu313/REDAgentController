@@ -6,7 +6,7 @@
 下载后无视安全提示运行即可。
 ## 使用说明
 ### 总则
-<img width="439" height="329" alt="捕获" src="https://github.com/user-attachments/assets/83921d70-7e05-42c2-b75a-135a531c4c2b" />
+<img width="859" height="452" alt="477552630-e7708e41-584d-495a-be44-9679323290c3" src="https://github.com/user-attachments/assets/acff4eff-c2e0-4fdf-9286-fc169ad98298" />
 
 使用中黑色控制台请勿关闭
 
