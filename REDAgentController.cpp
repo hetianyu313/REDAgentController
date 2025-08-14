@@ -1,390 +1,390 @@
-#define pxuy64w1kx BOOL
-#define bjyz2fvjlb BitBlt
-#define ozfllut9zz BringWindowToTop
-#define o0qqc1b66x CALLBACK
-#define mdg64xlrua CHAR
-#define vyeed1dmm1 COLORREF
-#define mw5ws3jho6 COORD
-#define hnd6ljc2vk CP_ACP
-#define k2piygwee1 CTRL_CLOSE_EVENT
-#define b2t00u2ogh CTRL_LOGOFF_EVENT
-#define d9yvcnerw6 CTRL_SHUTDOWN_EVENT
-#define rpc9h012gl CallNextHookEx
-#define jgp97jkeam ClearWindowContent
-#define gibvipf42f CloseHandle
-#define radlwsiz7e ConsoleHandler
-#define bx3s1bm526 CreateCompatibleBitmap
-#define qjbqzkc9l5 CreateCompatibleDC
-#define cz7tj1xlle CreateFontIndirectA
-#define jbzrcn88uf CreateSolidBrush
-#define jnfl5xxm91 CreateToolhelp32Snapshot
-#define ngwkih7fmh DWORD
-#define s9r833neh7 DWORD_PTR
-#define qsymtq9kr8 DeleteDC
-#define ihg01e3cri DeleteMenu
-#define byrsia2e95 DeleteObject
-#define wnsbtd2rxs DestroyWindow
-#define f8skayx6t5 DrawMenuBar
-#define h6jsp5t1fy EnableMenuItem
-#define qqh951f2dz EnumData
-#define t074tqspqr EnumProcessModules
-#define efvdkvdfki EnumProcesses
-#define jola8b7c4o EnumWindows
-#define eg0cgoh06g EnumWindowsProc
-#define b0t6hlohe7 FALSE
-#define tbxrzoimho FillRect
-#define sww9kgwma9 FindProcessId
-#define f846fslw4c FindWindowsByProcessName
-#define rgp3ksvlpd ForceRefreshWindow
-#define p1sy4d4isa GWL_STYLE
-#define okjatq02ui GetAsyncKeyState
-#define w2sswfx1b7 GetClientRect
-#define v2nt02hbl3 GetConsoleWindow
-#define a5ihou5tb3 GetCurrentProcessId
-#define p62vu1uyfr GetCurrentThreadId
-#define yia8xzcriw GetCurrentUsername
-#define teo75l4wkg GetDC
-#define s6ofae6gq3 GetDeviceCaps
-#define a8xleyx2e5 GetGUIThreadInfo
-#define cwujb2j6oe GetLastError
-#define jqsaex6lo2 GetModuleFileName
-#define c4yjkccycd GetModuleFileNameEx
-#define epgs9o94p1 GetModuleHandle
-#define njf60yeglk GetProcAddress
-#define eg1h04iyd9 GetStdHandle
-#define yk3ozay9mo GetSystemMenu
-#define af5gg3cytf GetSystemMetrics
-#define pmqpiqe20l GetThreadDesktop
-#define z9kz89u20v GetUserNameA
-#define kbjee5m1ka GetWindowLong
-#define ui81g02p92 GetWindowLongPtr
-#define nhdygbay4m GetWindowPlacement
-#define nvaxuwax2x GetWindowRect
-#define lgkyp7rj9m GetWindowThreadProcessId
-#define cwdu9fezro HANDLE
-#define uv58r9ofqt HBITMAP
-#define fm6ela9dob HBRUSH
-#define avywsdbwmz HC_ACTION
-#define rxexy2u4dg HDC
-#define pgl3ul1i6e HFONT
-#define ep9m9yfhr3 HHOOK
-#define yfp0m16xjp HICON
-#define b8ayc5l3cy HMENU
-#define rt0cv4bi4g HMODULE
-#define yxcne5p54g HWND
-#define h5wewn5i7l HWND_NOTOPMOST
-#define gqsicv08pp HWND_TOPMOST
-#define cmv6sdqng6 ICON_BIG
-#define k6hr8n4nb7 ICON_SMALL
-#define of63cudddn ICON_SMALL2
-#define mfho2iwzix IMAGE_ICON
-#define sg96nyj59t INVALID_HANDLE_VALUE
-#define mf8y2yxqre IsWindow
-#define jotybi1xjd IsWindowVisible
-#define ozkkvzh1bw KBDLLHOOKSTRUCT
-#define o97zf81wup LF_FACESIZE
-#define frhxc061s0 LOGFONTA
-#define hb89hjx2j3 LOGPIXELSY
-#define hriwj32f63 LONG_PTR
-#define wfccy3uh8x LPARAM
-#define n3l4npv5s7 LPCSTR
-#define of2u1lvmuz LR_DEFAULTSIZE
-#define x2pu50hebl LR_LOADFROMFILE
-#define kvhc5mfqj9 LoadImage
-#define v1x02kjy4c MAX_PATH
-#define h1pi2teerc MF_BYCOMMAND
-#define jko5n0vild MF_GRAYED
-#define l8pl23u6k1 MulDiv
-#define g3o3aw711s NTAPI
-#define pr1vboapbx NTSTATUS
-#define m3vm9ikcfl NT_SUCCESS
-#define dd6s14opkg NULL
-#define ee88x572a1 NtClose
-#define u9b1b6hbsb NtQuerySystemInformation
-#define n9ago4coi3 NtQuerySystemInformation_t
-#define ycy3rperc9 OpenProcess
-#define f054sj5gbx OpenThread
-#define b3ihz49b58 PROCESSENTRY32
-#define cuo0r6o0ne PROCESS_ALL_ACCESS
-#define duwmdh0d0d PROCESS_QUERY_INFORMATION
-#define f51jviejb6 PROCESS_TERMINATE
-#define ytoe89vrz7 PROCESS_VM_READ
-#define wpov456i0z PULONG
-#define iuvaipjft8 PVOID
-#define rwpcu5ya9j PostMessage
-#define ywbqct6unp Process32First
-#define zgmgm9xd78 Process32Next
-#define x8pwuqbvss RDW_ALLCHILDREN
-#define c15h4nigvs RDW_ERASE
-#define dcvv3f94n9 RDW_INVALIDATE
-#define ktjatk1vs7 RDW_UPDATENOW
-#define cfxxv4y2h0 RECT
-#define zyufwiet4t RGB
-#define e7avcf5k2q RedrawWindow
-#define g3r3ibkxux RefreshWindows
-#define y9kp1l59fw ReleaseDC
-#define tuzuo7vnsd RemoveHook
-#define ocu9ipd7gu SC_CLOSE
-#define c9llpwmvy1 SHORT
-#define fvk5gxkep9 SMALL_RECT
-#define dexa0vouve SM_CXSCREEN
-#define xm0pa33mz5 SM_CYSCREEN
-#define jpcrm6ifxf SRCCOPY
-#define d5jhgdu3o4 STD_OUTPUT_HANDLE
-#define vuki5emz8k SWP_FRAMECHANGED
-#define mak33e1ykb SWP_NOMOVE
-#define s9n2brmgxm SWP_NOOWNERZORDER
-#define rah5ex99st SWP_NOSIZE
-#define mzsrvfwrns SWP_NOZORDER
-#define lhcereg6u6 SYSTEM_INFORMATION_CLASS
-#define kzepuleaks SelectObject
-#define mwvhsqkdn3 SendMessage
-#define q8475heq2o SetConsoleCP
-#define u7au804les SetConsoleCtrlHandler
-#define jmdt7sv3ei SetConsoleScreenBufferSize
-#define ns8xb9tf4z SetConsoleTitle
-#define w1io3epeq9 SetConsoleTopMost
-#define rcgx2in4xr SetConsoleWindowInfo
-#define a9uwjv0lqh SetConsoleWindowSize
-#define fgyfgd6ss7 SetForegroundWindow
-#define e0ro876y5x SetHook
-#define p425sg32ib SetWindowLong
-#define w70shh9u4t SetWindowLongPtr
-#define f6w0ifmssc SetWindowPlacement
-#define oomb3hfpes SetWindowPos
-#define rqsarvsdyn Sleep
-#define daazehh7kw TEXT
-#define u3qdng3hss TH32CS_SNAPPROCESS
-#define lzlri87swf TH32CS_SNAPTHREAD
-#define szk72o722b THREADENTRY32
-#define yll58n8exo THREAD_QUERY_INFORMATION
-#define dxfoyc4935 TRUE
-#define v44lzeafq9 TerminateProcess
-#define brr08a12m1 TextOutA
-#define qotgyuhy7u Thread32First
-#define c0ouhnaoe8 Thread32Next
-#define qzuwwskd8n ThreadA_Function
-#define rxjz0xwvmu ThreadB_Function
-#define vo5b480g5k ThreadC_Function
-#define ewelg1rnxz ThreadD_Function
-#define zvokgqs6lk ThreadE_Function
-#define az3rqd4vv0 ThreadF_Function
-#define ea3jzi1vjq ThreadG_Function
-#define fnhc3qxs1t ThreadH_Function
-#define qbuwekye6w ThreadKZ_Function
-#define h6ym0xzdkg ToggleWindowMode
-#define ccyhy90bdx ULONG
-#define ujypuounx9 UNLEN
-#define k8vllc0os4 UnhookWindowsHookEx
-#define ifhud1pn9c VK_CONTROL
-#define kgc1ds8z98 VK_ESCAPE
-#define ej4zr8t9vp WH_KEYBOARD
-#define wzgjjny72x WH_KEYBOARD_LL
-#define mtk72ocwka WINAPI
-#define bgk4fnsi7x WINDOWPLACEMENT
-#define mhq4a18m6y WM_CLOSE
-#define pim3x3fg1g WM_KEYDOWN
-#define k2xa1ww62l WM_SETICON
-#define ggejoxofft WS_CAPTION
-#define cpsvryjyj8 WS_MAXIMIZEBOX
-#define xuifnb7utt WS_OVERLAPPEDWINDOW
-#define dz51l1dnxf WS_THICKFRAME
-#define hwfen1o4pl atomic
-#define yppwd5tqrn auto
-#define i13s1zs4ol bgColor
-#define ga85by58wp bool
-#define wadbwsmt23 bottom
-#define f2r156onnb break
-#define r3vvi4mr6p buffer
-#define n22dpwf21k bufferSize
-#define esjh5198a2 c
-#define k8cfl4j3xr cProcesses
-#define o3tcxa7yrx c_str
-#define szy3kvmb12 case
-#define br6evl0jrl cbNeeded
-#define nzslvg2x4i cbNeededMod
-#define j5wum0ehl1 cerr
-#define kmn0x8pntz char
-#define kyz6c7jmbz choice
-#define oo5oh2j7xv chrono
-#define bci4oje3ya chrono_to_string
-#define bx52ngc49n cin
-#define a5n3bujbep clientRect
-#define vsc2cdxcc4 closewindowpro
-#define f909u7fdym const
-#define k07uhhxq52 continue
-#define t4pxg2h8rz count
-#define dgmmqkpu95 cout
-#define p7mzhg355c data
-#define x85xlzc60g default
-#define rjm0oebi0c do
-#define qivekqsbmg dwSize
-#define g9zuglrfoj else
-#define da10gr90mf end
-#define rpd7jlrkba endl
-#define d6krlw5zdf error
-#define ewgyw76tjc exedir
-#define spdnfr1kiw false
-#define vcenwwt9gl find
-#define n3bexodpfo find_last_of
-#define flvuuhffky first
-#define qmtpcn7b2s fontName
-#define h008bma9qc for
-#define hsf4rhp45g g_kzjc
-#define oqfjqq9z3t g_kzjcwl
-#define dar8yj634u g_running
-#define y5wad099eh g_threadA_active
-#define u4byxvd8ry g_threadB_active
-#define qkpqa85i78 g_threadC_active
-#define y0de7uwesa g_threadE_active
-#define mqq2mj50p3 g_threadF_active
-#define gojs01ppbt g_threadG_active
-#define ntxggys3nf g_threadH_active
-#define xbc4fss6dy getexedir
-#define yz7j50ulkm getline
-#define ex3bbh81y2 getopen
-#define owo8rj031k getpidbyhwnd
-#define n4kauwfu1l hBitmap
-#define boxb3wglqe hBrush
-#define hv8i0kvv7z hFont
-#define v1x8rv2wko hIcon
-#define epanj2l5ym hMemDC
-#define algf3zcbyg hMenu
-#define slos06fcst hMod
-#define oka0x4imlr hOldBitmap
-#define rdnedni6pr hProcess
-#define jzpdoyr0ve hSnapshot
-#define kkvoloots3 hStdout
-#define t28jhts22x hThread
-#define t5bxq55au1 handles
-#define kdlr887u3z hdc
-#define aaj6qkvns4 height
-#define ak6ny8hir0 hideclose
-#define ssvhfx1uwz hook
-#define oe7yowrcxw hwnd
-#define bw99wxxlsl i
-#define bct0hll14b icon
-#define v0a0v0vbia if
-#define lunrc1wzhz int
-#define g3b0pyigla join
-#define bmtd2596za kill_exe
-#define cyf45ew922 kz
-#define pcm1k11j5v lParam
-#define r5xxac3x5u left
-#define pk6r1qmhg1 len
-#define ufmvztbdl9 length
-#define cfo7ca7ave lf
-#define rezxe6ic0b lfFaceName
-#define zw1lk0nr4e lfHeight
-#define ux2lph3j81 localtime_r
-#define tht17gmoku m_brk
-#define ace743i8pl main
-#define dmnng2vmce milliseconds
-#define a6nyb69iir nCode
-#define jtqb4kzu37 name
-#define qsqkjk94er namespace
-#define yoqofx2as0 newmsg
-#define bhhl9srtrm npos
-#define ss3euiqd8r ntdll
-#define uk7mxtuqzc nullptr
-#define cazjlovayp nwb
-#define l1vcq79ts5 op
-#define nn6us5d4e2 ops
-#define vv7qpa6jxb p
-#define tg2hgc7mdl pair
-#define jd9aj8h4b5 path
-#define rd3d8al0pn pe32
-#define th3fwzqnyx pid
-#define rmchi0oirc processId
-#define hv4aqwcwn8 processName
-#define zp09as0o36 processes
-#define jhrdy58gof push_back
-#define tbyvrsbab9 r
-#define e0jst38wq8 rect
-#define c89hjsgioa reinterpret_cast
-#define q1embgj9l3 result
-#define ikafw2h8ra return
-#define vzl86b4ujg right
-#define n7ymnh2lt1 s
-#define kn72h55yrc safetoi
-#define kvu51qrrka second
-#define lgskhg7yqn setfont
-#define xa55tzj247 seticon
-#define oo8wr1rvgo signal
-#define fam2nu31zk sizeof
-#define n3rh89ejrx sleep_for
-#define cbviy8qhl6 ss
-#define t2619u8x18 static
-#define nmf545oer9 static_cast
-#define zapn47mr80 status
-#define oloprls765 std
-#define pldgg2cpj2 str
-#define foax257tbx strcmp
-#define r78174rbg9 strftime
-#define vimy7lqnbi string
-#define qn6a5ntj7o stringstream
-#define l3ggoe5f33 strncpy
-#define w9ev1p9hq8 struct
-#define abd401psgi style
-#define a59799rzk6 substr
-#define uekdt9blr2 switch
-#define a5h9y7rgcw sx
-#define v8evd5bojl sy
-#define md86ara5lp system
-#define yfzvutdss3 system_clock
-#define vyrfiz9b2k szExeFile
-#define t1v2vv1dv2 szModName
-#define b0emfpocg8 szProcessName
-#define hzvs2u70vd t
-#define yefq8u4i7c te32
-#define gcck8g0g0z text
-#define afc76x7ho5 th32OwnerProcessID
-#define oue4ry07k3 th32ProcessID
-#define kwahl2qti6 th32ThreadID
-#define lr1b04h2zj this_thread
-#define ddjc5jyxjp thread
-#define xsumskbh97 threadA
-#define k2zho9127t threadB
-#define h2ncwtsb92 threadC
-#define ivyvrlxb3k threadD
-#define w518hkjbox threadE
-#define nq8yirzb53 threadF
-#define jr0p57ugru threadG
-#define x4qnwrbmeh threadH
-#define w3nkk8v8dx threadId
-#define zq94exlkbd time
-#define hlmk6dd1da time_point
-#define wpoog45l90 time_t
-#define t4g5xx49gp time_to_string
-#define kf9plujiz6 timestamp
-#define gkwauokmpx tm
-#define wbkbjqeb26 tm_info
-#define dodwb2x9pa to_time_t
-#define v4dszpvqol top
-#define fn7fyudvaz topmost
-#define uwfy0g322c tp
-#define k6izmnjhik true
-#define f17x42ypct typedef
-#define pjst3txma1 uhdc
-#define jp8n09ar6j unordered_map
-#define i37tyywly3 unsigned
-#define m5i7w85bhf username
-#define kgq1fqoey7 username_len
-#define xxrh9p6ppb using
-#define jgwc55gjht v
-#define mzicv09uep vector
-#define x17bboztl9 vkCode
-#define mengx3ll9w void
-#define qiinv8t7c3 w
-#define h7b1nd7ee2 wParam
-#define oip10amozv while
-#define lbcgsbkc1p width
-#define fgy9krglr6 windowSize
-#define am0vc0r10n windowStates
-#define wysw3kuu08 windowed
-#define imtg3tyl2c windows
-#define ydkqpk0fny wpPrev
-#define mfrwlvkks5 wstring
+#define wv3mz1p7kz BOOL
+#define q63b9sfkv8 BitBlt
+#define z853kl7xns BringWindowToTop
+#define dk4d352oby CALLBACK
+#define looggw11xq CHAR
+#define lme9dmrl0j COLORREF
+#define u4iotmtncb COORD
+#define wg3vjck58n CP_ACP
+#define y20piqodt1 CTRL_CLOSE_EVENT
+#define kaqw41fzig CTRL_LOGOFF_EVENT
+#define tfv2u01jh1 CTRL_SHUTDOWN_EVENT
+#define a3tz4h8d62 CallNextHookEx
+#define d31o106vpy ClearWindowContent
+#define r9tv57ls4q CloseHandle
+#define iuj2wu63zz ConsoleHandler
+#define m7pb5ckivt CreateCompatibleBitmap
+#define g6w1esqevw CreateCompatibleDC
+#define a7kpah2kpk CreateFontIndirectA
+#define l8f8hxvjrn CreateSolidBrush
+#define g9yfdgwtil CreateToolhelp32Snapshot
+#define rhliyf4mj3 DWORD
+#define c0m1h7m3ej DWORD_PTR
+#define qlmgiuxc0t DeleteDC
+#define cvsb70e3hy DeleteMenu
+#define sa3b452jb7 DeleteObject
+#define kb34lir653 DestroyWindow
+#define q0m77ge9i3 DrawMenuBar
+#define b5khhbmk4o EnableMenuItem
+#define escsojx0cz EnumData
+#define pxzw3nepuo EnumProcessModules
+#define fzrjajvu9z EnumProcesses
+#define gib6i3ls7w EnumWindows
+#define f5b9cbevl3 EnumWindowsProc
+#define mbl1om6shj FALSE
+#define wt946mxv5p FillRect
+#define cteqxwv3qq FindProcessId
+#define ppd0i2zumj FindWindowsByProcessName
+#define nab2gynlnd ForceRefreshWindow
+#define m9fwikz66e GWL_STYLE
+#define tn8xujjk3y GetAsyncKeyState
+#define tta7blyu2w GetClientRect
+#define ttbsp82nsu GetConsoleWindow
+#define zc2iwa1bkb GetCurrentProcessId
+#define kfin2ov084 GetCurrentThreadId
+#define tb9c0s6ha4 GetCurrentUsername
+#define hxgca0j25x GetDC
+#define nr6fimna4i GetDeviceCaps
+#define kff18gfo5p GetGUIThreadInfo
+#define sb7se10rvk GetLastError
+#define wrlzm169nj GetModuleFileName
+#define apbigdlxyf GetModuleFileNameEx
+#define bfkmkh7gjp GetModuleHandle
+#define a2mzpt6boy GetProcAddress
+#define beluku71p3 GetStdHandle
+#define iis38p3nvw GetSystemMenu
+#define o09mceonxh GetSystemMetrics
+#define oa9glapsz6 GetThreadDesktop
+#define xituprgqoj GetUserNameA
+#define bgfco79ign GetWindowLong
+#define boeaewck2i GetWindowLongPtr
+#define c8tx092jtq GetWindowPlacement
+#define c0cxiwbc4x GetWindowRect
+#define iz1z8908zf GetWindowThreadProcessId
+#define t4073nre1z HANDLE
+#define k4twq98a2g HBITMAP
+#define rbsdhrff8b HBRUSH
+#define q2u60zo00b HC_ACTION
+#define iye74mzujq HDC
+#define bj6rz2btk9 HFONT
+#define ngrtu8wccn HHOOK
+#define ddjqu2uiph HICON
+#define k227dhaltd HMENU
+#define lnpuz8bp8l HMODULE
+#define atxtuyv608 HWND
+#define s0qfpi0gin HWND_NOTOPMOST
+#define ypeeoht7ra HWND_TOPMOST
+#define k6wolxopsn ICON_BIG
+#define nlmg8aqz8q ICON_SMALL
+#define tu3gwmz9g3 ICON_SMALL2
+#define vguybgzqo8 IMAGE_ICON
+#define w2bhhvyl9a INVALID_HANDLE_VALUE
+#define wl2nhqm0bf IsWindow
+#define pu5vdfjdso IsWindowVisible
+#define c7qt6uz2xn KBDLLHOOKSTRUCT
+#define yigk87vzbu LF_FACESIZE
+#define h8ewt62uka LOGFONTA
+#define jirqt1w8ev LOGPIXELSY
+#define ab377wnxi4 LONG_PTR
+#define wy915q0u6w LPARAM
+#define eteiwlvd5w LPCSTR
+#define c8c10xtld2 LR_DEFAULTSIZE
+#define wylhbfykh1 LR_LOADFROMFILE
+#define m6doze6twk LoadImage
+#define de89ot1cca MAX_PATH
+#define bqbaudadmr MF_BYCOMMAND
+#define rrdydhk4nj MF_GRAYED
+#define m5khjno7kh MulDiv
+#define egnh2jn3pi NTAPI
+#define y538t31mjr NTSTATUS
+#define p53i3n3xk4 NT_SUCCESS
+#define e8kyh1iojo NULL
+#define b8lmhy06mi NtClose
+#define vxm5a3i3z4 NtQuerySystemInformation
+#define hfw46y1fvd NtQuerySystemInformation_t
+#define zcpq6lwsvt OpenProcess
+#define uxtlph560x OpenThread
+#define z01skxvg4i PROCESSENTRY32
+#define r0uyzs0q2p PROCESS_ALL_ACCESS
+#define lziblyjwid PROCESS_QUERY_INFORMATION
+#define y6886nt98d PROCESS_TERMINATE
+#define sji9i63uw9 PROCESS_VM_READ
+#define b7r24x70l2 PULONG
+#define sxpo2b7jr1 PVOID
+#define ig3z46tske PostMessage
+#define s4p8z6iqmv Process32First
+#define spmc44qpts Process32Next
+#define jzl93ndxps RDW_ALLCHILDREN
+#define oq1qtju2wo RDW_ERASE
+#define dw3uds3wkq RDW_INVALIDATE
+#define htcp45ndkh RDW_UPDATENOW
+#define e5kzbawjlo RECT
+#define os5oyegobe RGB
+#define izo0w76a43 RedrawWindow
+#define nyj6f1rujh RefreshWindows
+#define axp4k7d2vp ReleaseDC
+#define t4p2cqauu0 RemoveHook
+#define flz8uiq64w SC_CLOSE
+#define aqnh5xmz0j SHORT
+#define hac4iinzgu SMALL_RECT
+#define x1qsbbn4ye SM_CXSCREEN
+#define nrukmqnhkg SM_CYSCREEN
+#define gapozva5xt SRCCOPY
+#define osadtpmwa0 STD_OUTPUT_HANDLE
+#define tcf7x9grue SWP_FRAMECHANGED
+#define ip1jgtr29e SWP_NOMOVE
+#define s4mx33725s SWP_NOOWNERZORDER
+#define bm2lnx4etq SWP_NOSIZE
+#define evplwrsd68 SWP_NOZORDER
+#define cnn1dy5l2j SYSTEM_INFORMATION_CLASS
+#define zqu4sr2bcg SelectObject
+#define i0ru6bn603 SendMessage
+#define e7o42rw6fd SetConsoleCP
+#define sk7quwwuz4 SetConsoleCtrlHandler
+#define i1z43xaaf4 SetConsoleScreenBufferSize
+#define xxq7wfkhvx SetConsoleTitle
+#define ofbgnaqcgo SetConsoleTopMost
+#define fihza63kw7 SetConsoleWindowInfo
+#define zjompfwoek SetConsoleWindowSize
+#define sz38wfs4v0 SetForegroundWindow
+#define rn5j2ttaaz SetHook
+#define sjc5qgevi6 SetWindowLong
+#define xau9xxsz0v SetWindowLongPtr
+#define zv6s6ur1sw SetWindowPlacement
+#define kzqgjmaj29 SetWindowPos
+#define hbdegc5fe2 Sleep
+#define m7f30xzht4 TEXT
+#define m2fqgm6elb TH32CS_SNAPPROCESS
+#define dcj1hx5fb2 TH32CS_SNAPTHREAD
+#define k93vnygozn THREADENTRY32
+#define qtmx80ayce THREAD_QUERY_INFORMATION
+#define gt94whrof7 TRUE
+#define p3v7mz2vrz TerminateProcess
+#define goqoay5gha TextOutA
+#define p0hm9c7yr1 Thread32First
+#define cedot75mpx Thread32Next
+#define jzriqqu7un ThreadA_Function
+#define qw6jo5cpq5 ThreadB_Function
+#define iahjrnz5u2 ThreadC_Function
+#define r3rc8dddk3 ThreadD_Function
+#define proivd2hpr ThreadE_Function
+#define uhtya7wr8b ThreadF_Function
+#define acypr6vrbw ThreadG_Function
+#define vyb5obch2t ThreadH_Function
+#define y2yqqfgkk4 ThreadKZ_Function
+#define bgrdtfzsxr ToggleWindowMode
+#define lr2w5fwynx ULONG
+#define ym5nvcpc41 UNLEN
+#define uxj9ym5q1h UnhookWindowsHookEx
+#define qavvys05gd VK_CONTROL
+#define ex9bq9m505 VK_ESCAPE
+#define zou6h581a6 WH_KEYBOARD
+#define zc3qxjfg1v WH_KEYBOARD_LL
+#define ugixnoowcc WINAPI
+#define e0xileshbg WINDOWPLACEMENT
+#define qaokfknw8z WM_CLOSE
+#define vkg80pkqfw WM_KEYDOWN
+#define oohfzr5sun WM_SETICON
+#define smzdxtnra4 WS_CAPTION
+#define vpz08hk7ci WS_MAXIMIZEBOX
+#define ixbng959we WS_OVERLAPPEDWINDOW
+#define o592cm4q9q WS_THICKFRAME
+#define lp0k7mun46 atomic
+#define d5a8a1en5s auto
+#define exzmjjdh9g bgColor
+#define uexolj4ng7 bool
+#define nbcbrlhr33 bottom
+#define kibun78sck break
+#define eilimtwfqg buffer
+#define p3spqjk0zg bufferSize
+#define zohik3uvh4 c
+#define qi00p5qpws cProcesses
+#define rhv8fm036y c_str
+#define bqnef05due case
+#define aklrg0ym5r cbNeeded
+#define cgybkx10qb cbNeededMod
+#define fhpje7qw11 cerr
+#define xbj2jnnuty char
+#define bf6ldcu73b choice
+#define yc78em91px chrono
+#define ulspl9t1rr chrono_to_string
+#define f0e0ej6sct cin
+#define i6mp1bnf5l clientRect
+#define mlw46kmmzz closewindowpro
+#define lddynrrhtc const
+#define uq0k75t90b continue
+#define coit9c6mq9 count
+#define bpxwbsxkw5 cout
+#define vtot0uzi0g data
+#define a0eyjn263k default
+#define x7zv1yzpay do
+#define lmxo2qacwv dwSize
+#define m3sqp6gpq2 else
+#define ngodngutyb end
+#define atyztj3b08 endl
+#define hlz2bwaxn6 error
+#define i2oy5gu6yt exedir
+#define hhanf61ntc false
+#define ylust28pv1 find
+#define yvo638fqx3 find_last_of
+#define cnb9s5snaw first
+#define wv67vtxphx fontName
+#define d15m82li6g for
+#define j2hokgu88c g_kzjc
+#define mo26pkdsj7 g_kzjcwl
+#define dzc6icsru0 g_running
+#define bv93u9tnhg g_threadA_active
+#define byjy6mp664 g_threadB_active
+#define b6scsgjh1p g_threadC_active
+#define u5dm2ao24q g_threadE_active
+#define zpksmflq9f g_threadF_active
+#define muokb8ff4b g_threadG_active
+#define ajqe17ch63 g_threadH_active
+#define fauovls9yv getexedir
+#define ra8f4huqkm getline
+#define h9tqn8qyrs getopen
+#define sek2muy4wr getpidbyhwnd
+#define ooq857fn7j hBitmap
+#define xd5cn3qn2z hBrush
+#define be4uzhs33a hFont
+#define b5n0wgodua hIcon
+#define yyxktk19ir hMemDC
+#define bbqbmxloxe hMenu
+#define c68labfcjq hMod
+#define w5n4stslsv hOldBitmap
+#define m2q3ysgaye hProcess
+#define r7ryhbowtc hSnapshot
+#define ek5pc06tr2 hStdout
+#define o4keehtw63 hThread
+#define si4d5070sy handles
+#define aag68t6asp hdc
+#define fgywhkniuh height
+#define rsyjvbn9wm hideclose
+#define x6r2ykxn36 hook
+#define sx2xo7aoe0 hwnd
+#define maac7khmgy i
+#define v7enqa7lhf icon
+#define ccwp19ggor if
+#define s8kbmtqwnr int
+#define iolres1z04 join
+#define y5xc39a6zs kill_exe
+#define n7scf0g66d kz
+#define sf03p65cxx lParam
+#define ka5l5lxj43 left
+#define wks5jxpbnh len
+#define t99cm924xm length
+#define sxq90cmyfg lf
+#define rl33cy7lfs lfFaceName
+#define ghw6wi1cxo lfHeight
+#define lhzb1wy1rq localtime_r
+#define ujpcp1u5k9 m_brk
+#define q53i3o1sar main
+#define f74jjmc280 milliseconds
+#define ett2whlc6b nCode
+#define kmj1w9a737 name
+#define jd740jinwb namespace
+#define q8ab0bkb7d newmsg
+#define xzwpg66hvd npos
+#define l6tya0kpbh ntdll
+#define wp6zd5matj nullptr
+#define p0c6lzmuj2 nwb
+#define qe1216pt8k op
+#define ofmptctekf ops
+#define plqf6f5nv9 p
+#define ph41vivl8c pair
+#define b68z7ngips path
+#define lz6uv7ep52 pe32
+#define gmp5pit1er pid
+#define kfnjwcwhjv processId
+#define mx8ml2xb2r processName
+#define nwhu09me7l processes
+#define w84u5dlx7r push_back
+#define wf07lkm7ai r
+#define k9fy6gc758 rect
+#define k3xpww12hi reinterpret_cast
+#define hlovahj353 result
+#define tmpiefzjqx return
+#define lsauaenj9p right
+#define q9gtmvamsi s
+#define xc6oi3agfh safetoi
+#define uxwgl650nl second
+#define vchszdw5v4 setfont
+#define jshq5bzzsj seticon
+#define whuc6xvc2w signal
+#define obfpyjt00u sizeof
+#define d3fhs13yui sleep_for
+#define tatvswbtxa ss
+#define ttnml6x8th static
+#define proi6qkigj static_cast
+#define ia2pgwdt68 status
+#define be50h4vwjh std
+#define aenmdq3n16 str
+#define au9n2hos54 strcmp
+#define momszqvu98 strftime
+#define ziutfva616 string
+#define nc2ademy17 stringstream
+#define oc6dykhcvr strncpy
+#define db72paotpi struct
+#define oviw9obins style
+#define o4wnqjkj86 substr
+#define cpknk31k6g switch
+#define vz3u1bmlmy sx
+#define my0wxtvo67 sy
+#define vdncx9w0n9 system
+#define rjdclgn28a system_clock
+#define dye0qfg39s szExeFile
+#define x760nx67vl szModName
+#define of0rr91nnx szProcessName
+#define s6brvxvlc5 t
+#define hjnuv8wecn te32
+#define pz6ebp52bg text
+#define xcfi3lgma2 th32OwnerProcessID
+#define ihkaet880q th32ProcessID
+#define qf1y1fef7b th32ThreadID
+#define p2l2xhp421 this_thread
+#define s99ytwe5gn thread
+#define sbe8hh259p threadA
+#define gvy3piwhl4 threadB
+#define cf23t16ao2 threadC
+#define sisyqyfg02 threadD
+#define z565hmu2v1 threadE
+#define dvivvigwa1 threadF
+#define t8rcv1m6mq threadG
+#define alt93dl3nt threadH
+#define vu6fvw5noi threadId
+#define fy4ol77tfo time
+#define qfjqefdkm0 time_point
+#define hphf39iogh time_t
+#define wd3isvpyi9 time_to_string
+#define tntesfhscd timestamp
+#define sszhz8s1sa tm
+#define ti79is4os2 tm_info
+#define hqbsg4hikj to_time_t
+#define aq2bdz6w9a top
+#define p3arcvus1v topmost
+#define d0jut6ov1v tp
+#define q7t0bezcwn true
+#define q3j0cththh typedef
+#define la6txb92qc uhdc
+#define yabml2i88t unordered_map
+#define r6o7uswnzv unsigned
+#define oqmdun6mnl username
+#define z6d6vqz8a2 username_len
+#define ynbo0bbtrv using
+#define igj59u8jis v
+#define g9hldylrf0 vector
+#define dy9t7gnpmx vkCode
+#define fzncjtajgl void
+#define np0jfebg8b w
+#define t5wc87qw8u wParam
+#define wfo9mvh3ss while
+#define m1b97ogv5v width
+#define axml7stugn windowSize
+#define q0dm4mazts windowStates
+#define wb96u2yqdg windowed
+#define e9sg3ugwss windows
+#define ad3vhuphyb wpPrev
+#define ley33f7fl0 wstring
 #include <winsock2.h>
 #include <windows.h>
 #include <psapi.h>
@@ -407,649 +407,149 @@
 #include "NetBlocker.cpp"
 #include <winternl.h>
 #include <tchar.h>
-xxrh9p6ppb qsqkjk94er oloprls765; 
-//-lpsapi -lntdll -lgdi32 -std=c++14 -O2 -s -lws2_32 -m32
+ynbo0bbtrv jd740jinwb be50h4vwjh; //-lpsapi -lntdll -lgdi32 -std=c++14 -O2 -s -lws2_32 -m32
 //32bit mode
-hwfen1o4pl<ga85by58wp> y5wad099eh(spdnfr1kiw);
-hwfen1o4pl<ga85by58wp> u4byxvd8ry(spdnfr1kiw);
-hwfen1o4pl<ga85by58wp> qkpqa85i78(spdnfr1kiw);
-hwfen1o4pl<ga85by58wp> y0de7uwesa(spdnfr1kiw);
-hwfen1o4pl<ga85by58wp> mqq2mj50p3(spdnfr1kiw);
-hwfen1o4pl<ga85by58wp> gojs01ppbt(spdnfr1kiw);
-hwfen1o4pl<ga85by58wp> ntxggys3nf(spdnfr1kiw);
-hwfen1o4pl<ga85by58wp> hsf4rhp45g(spdnfr1kiw);//测试：控制进程运行 
-hwfen1o4pl<ga85by58wp> oqfjqq9z3t(spdnfr1kiw);//测试：控制进程网络 
-hwfen1o4pl<ga85by58wp> dar8yj634u(k6izmnjhik);
-t2619u8x18 f909u7fdym vimy7lqnbi bmtd2596za = "REDAgent.exe";
-w9ev1p9hq8 qqh951f2dz {
-ngwkih7fmh th3fwzqnyx;
-mzicv09uep<yxcne5p54g>* t5bxq55au1;
-};
-pxuy64w1kx o0qqc1b66x eg0cgoh06g(yxcne5p54g oe7yowrcxw, wfccy3uh8x pcm1k11j5v);
-mzicv09uep<yxcne5p54g> f846fslw4c(f909u7fdym kmn0x8pntz* hv4aqwcwn8) {
-mzicv09uep<yxcne5p54g> q1embgj9l3;
-ngwkih7fmh th3fwzqnyx = 0;
-b3ihz49b58 rd3d8al0pn = { fam2nu31zk(b3ihz49b58) };
-// 获取进程ID
-cwdu9fezro jzpdoyr0ve = jnfl5xxm91(u3qdng3hss, 0);
-v0a0v0vbia (ywbqct6unp(jzpdoyr0ve, &rd3d8al0pn)) {
-rjm0oebi0c {
-v0a0v0vbia (foax257tbx(rd3d8al0pn.vyrfiz9b2k, hv4aqwcwn8) == 0) {
-th3fwzqnyx = rd3d8al0pn.oue4ry07k3;
-f2r156onnb;
-}
-} oip10amozv (zgmgm9xd78(jzpdoyr0ve, &rd3d8al0pn));
-}
-gibvipf42f(jzpdoyr0ve);
-v0a0v0vbia (th3fwzqnyx == 0) ikafw2h8ra q1embgj9l3;
+lp0k7mun46<uexolj4ng7> bv93u9tnhg(hhanf61ntc); lp0k7mun46<uexolj4ng7> byjy6mp664(hhanf61ntc); lp0k7mun46<uexolj4ng7> b6scsgjh1p(hhanf61ntc); lp0k7mun46<uexolj4ng7> u5dm2ao24q(hhanf61ntc);
+lp0k7mun46<uexolj4ng7> zpksmflq9f(hhanf61ntc); lp0k7mun46<uexolj4ng7> muokb8ff4b(hhanf61ntc); lp0k7mun46<uexolj4ng7> ajqe17ch63(hhanf61ntc); lp0k7mun46<uexolj4ng7> j2hokgu88c(hhanf61ntc);//测试：控制进程运行 
+lp0k7mun46<uexolj4ng7> mo26pkdsj7(hhanf61ntc);//测试：控制进程网络 
+lp0k7mun46<uexolj4ng7> dzc6icsru0(q7t0bezcwn); ttnml6x8th lddynrrhtc ziutfva616 y5xc39a6zs = "REDAgent.exe"; db72paotpi escsojx0cz { rhliyf4mj3 gmp5pit1er;
+g9hldylrf0<atxtuyv608>* si4d5070sy; }; wv3mz1p7kz dk4d352oby f5b9cbevl3(atxtuyv608 sx2xo7aoe0, wy915q0u6w sf03p65cxx); g9hldylrf0<atxtuyv608> ppd0i2zumj(lddynrrhtc xbj2jnnuty* mx8ml2xb2r) {
+g9hldylrf0<atxtuyv608> hlovahj353; rhliyf4mj3 gmp5pit1er = 0; z01skxvg4i lz6uv7ep52 = { obfpyjt00u(z01skxvg4i) }; // 获取进程ID
+t4073nre1z r7ryhbowtc = g9yfdgwtil(m2fqgm6elb, 0); ccwp19ggor (s4p8z6iqmv(r7ryhbowtc, &lz6uv7ep52)) { x7zv1yzpay { ccwp19ggor (au9n2hos54(lz6uv7ep52.dye0qfg39s, mx8ml2xb2r) == 0) {
+gmp5pit1er = lz6uv7ep52.ihkaet880q; kibun78sck; } } wfo9mvh3ss (spmc44qpts(r7ryhbowtc, &lz6uv7ep52)); } r9tv57ls4q(r7ryhbowtc); ccwp19ggor (gmp5pit1er == 0) tmpiefzjqx hlovahj353;
 // 枚举窗口
-qqh951f2dz p7mzhg355c = { th3fwzqnyx, &q1embgj9l3 };
-jola8b7c4o(eg0cgoh06g, c89hjsgioa<wfccy3uh8x>(&p7mzhg355c));
-ikafw2h8ra q1embgj9l3;
-}
-pxuy64w1kx o0qqc1b66x eg0cgoh06g(yxcne5p54g oe7yowrcxw, wfccy3uh8x pcm1k11j5v) {
-qqh951f2dz* p7mzhg355c = c89hjsgioa<qqh951f2dz*>(pcm1k11j5v);
-ngwkih7fmh rmchi0oirc = 0;
-lgkyp7rj9m(oe7yowrcxw, &rmchi0oirc);
-v0a0v0vbia (rmchi0oirc == p7mzhg355c->th3fwzqnyx && jotybi1xjd(oe7yowrcxw)) {
-p7mzhg355c->t5bxq55au1->jhrdy58gof(oe7yowrcxw);
-}
-ikafw2h8ra dxfoyc4935;
-}
-ngwkih7fmh sww9kgwma9(f909u7fdym vimy7lqnbi& hv4aqwcwn8){
-ngwkih7fmh zp09as0o36[1024],br6evl0jrl;
-v0a0v0vbia(!efvdkvdfki(zp09as0o36,fam2nu31zk(zp09as0o36),&br6evl0jrl))ikafw2h8ra 0;
-ngwkih7fmh t4pxg2h8rz = br6evl0jrl / fam2nu31zk(ngwkih7fmh);
-h008bma9qc(ngwkih7fmh bw99wxxlsl = 0;bw99wxxlsl<t4pxg2h8rz;bw99wxxlsl++){
-v0a0v0vbia(zp09as0o36[bw99wxxlsl]==0) k07uhhxq52;
-cwdu9fezro rdnedni6pr = ycy3rperc9(duwmdh0d0d | ytoe89vrz7,b0t6hlohe7,zp09as0o36[bw99wxxlsl]);
-v0a0v0vbia(rdnedni6pr){
-mdg64xlrua b0emfpocg8[v1x02kjy4c] = "";
-v0a0v0vbia(c4yjkccycd(rdnedni6pr,dd6s14opkg,b0emfpocg8,v1x02kjy4c)){
-vimy7lqnbi jtqb4kzu37(b0emfpocg8);
-v0a0v0vbia(jtqb4kzu37.vcenwwt9gl(hv4aqwcwn8) != mfrwlvkks5::bhhl9srtrm){
-gibvipf42f(rdnedni6pr);
-ikafw2h8ra zp09as0o36[bw99wxxlsl];
-}
-}
-gibvipf42f(rdnedni6pr);
-}
-}
-ikafw2h8ra 0;
-}
-mengx3ll9w jgp97jkeam(yxcne5p54g oe7yowrcxw, vyeed1dmm1 i13s1zs4ol = zyufwiet4t(255, 255, 255)) {
+escsojx0cz vtot0uzi0g = { gmp5pit1er, &hlovahj353 }; gib6i3ls7w(f5b9cbevl3, k3xpww12hi<wy915q0u6w>(&vtot0uzi0g)); tmpiefzjqx hlovahj353; } wv3mz1p7kz dk4d352oby f5b9cbevl3(atxtuyv608 sx2xo7aoe0, wy915q0u6w sf03p65cxx) {
+escsojx0cz* vtot0uzi0g = k3xpww12hi<escsojx0cz*>(sf03p65cxx); rhliyf4mj3 kfnjwcwhjv = 0; iz1z8908zf(sx2xo7aoe0, &kfnjwcwhjv); ccwp19ggor (kfnjwcwhjv == vtot0uzi0g->gmp5pit1er && pu5vdfjdso(sx2xo7aoe0)) {
+vtot0uzi0g->si4d5070sy->w84u5dlx7r(sx2xo7aoe0); } tmpiefzjqx gt94whrof7; } rhliyf4mj3 cteqxwv3qq(lddynrrhtc ziutfva616& mx8ml2xb2r){ rhliyf4mj3 nwhu09me7l[1024],aklrg0ym5r;
+ccwp19ggor(!fzrjajvu9z(nwhu09me7l,obfpyjt00u(nwhu09me7l),&aklrg0ym5r))tmpiefzjqx 0; rhliyf4mj3 coit9c6mq9 = aklrg0ym5r / obfpyjt00u(rhliyf4mj3); d15m82li6g(rhliyf4mj3 maac7khmgy = 0;maac7khmgy<coit9c6mq9;maac7khmgy++){
+ccwp19ggor(nwhu09me7l[maac7khmgy]==0) uq0k75t90b; t4073nre1z m2q3ysgaye = zcpq6lwsvt(lziblyjwid | sji9i63uw9,mbl1om6shj,nwhu09me7l[maac7khmgy]); ccwp19ggor(m2q3ysgaye){
+looggw11xq of0rr91nnx[de89ot1cca] = ""; ccwp19ggor(apbigdlxyf(m2q3ysgaye,e8kyh1iojo,of0rr91nnx,de89ot1cca)){ ziutfva616 kmj1w9a737(of0rr91nnx); ccwp19ggor(kmj1w9a737.ylust28pv1(mx8ml2xb2r) != ley33f7fl0::xzwpg66hvd){
+r9tv57ls4q(m2q3ysgaye); tmpiefzjqx nwhu09me7l[maac7khmgy]; } } r9tv57ls4q(m2q3ysgaye); } } tmpiefzjqx 0; } fzncjtajgl d31o106vpy(atxtuyv608 sx2xo7aoe0, lme9dmrl0j exzmjjdh9g = os5oyegobe(255, 255, 255)) {
 //lock_guard<mutex> lock(mtx);
-v0a0v0vbia (!mf8y2yxqre(oe7yowrcxw)) ikafw2h8ra;
-rxexy2u4dg kdlr887u3z = teo75l4wkg(oe7yowrcxw);
-cfxxv4y2h0 a5n3bujbep;
-w2sswfx1b7(oe7yowrcxw, &a5n3bujbep);
-rxexy2u4dg epanj2l5ym = qjbqzkc9l5(kdlr887u3z);
-uv58r9ofqt n4kauwfu1l = bx3s1bm526(kdlr887u3z, 
-a5n3bujbep.vzl86b4ujg, a5n3bujbep.wadbwsmt23);
-uv58r9ofqt oka0x4imlr = (uv58r9ofqt)kzepuleaks(epanj2l5ym, n4kauwfu1l);
-fm6ela9dob boxb3wglqe = jbzrcn88uf(i13s1zs4ol);
-tbxrzoimho(epanj2l5ym, &a5n3bujbep, boxb3wglqe);
-bjyz2fvjlb(kdlr887u3z, 0, 0, 
-a5n3bujbep.vzl86b4ujg, a5n3bujbep.wadbwsmt23,
-epanj2l5ym, 0, 0, jpcrm6ifxf);
-kzepuleaks(epanj2l5ym, oka0x4imlr);
-byrsia2e95(n4kauwfu1l);
-qsymtq9kr8(epanj2l5ym);
-byrsia2e95(boxb3wglqe);
-y9kp1l59fw(oe7yowrcxw, kdlr887u3z);
-e7avcf5k2q(oe7yowrcxw, uk7mxtuqzc, uk7mxtuqzc, 
-dcvv3f94n9 | c15h4nigvs | x8pwuqbvss | ktjatk1vs7);
-}
-// 强制刷新指定窗口
-t2619u8x18 mengx3ll9w rgp3ksvlpd(yxcne5p54g oe7yowrcxw) {
-v0a0v0vbia (!mf8y2yxqre(oe7yowrcxw)) ikafw2h8ra;
-// 触发WM_NCCALCSIZE消息重绘非客户区
-oomb3hfpes(oe7yowrcxw, uk7mxtuqzc, 0, 0, 0, 0,
-mak33e1ykb | rah5ex99st | mzsrvfwrns |
-s9n2brmgxm | vuki5emz8k);
-// 强制重绘客户区
-e7avcf5k2q(oe7yowrcxw, uk7mxtuqzc, uk7mxtuqzc, 
-dcvv3f94n9 | c15h4nigvs | ktjatk1vs7);
-}
-// 批量刷新窗口
-t2619u8x18 mengx3ll9w g3r3ibkxux(f909u7fdym mzicv09uep<yxcne5p54g>& imtg3tyl2c) {
-h008bma9qc (yxcne5p54g oe7yowrcxw : imtg3tyl2c) {
-//ForceRefreshWindow(hwnd);
-jgp97jkeam(oe7yowrcxw);
-}
-}
-/*void ToggleWindowMode(HWND hwnd, bool windowed) {
-t2619u8x18 bgk4fnsi7x ydkqpk0fny = { fam2nu31zk(bgk4fnsi7x) };
-ngwkih7fmh abd401psgi = kbjee5m1ka(oe7yowrcxw, p1sy4d4isa);
-
-v0a0v0vbia (wysw3kuu08) {
-// 窗口化模式：添加标题栏、边框和大小调整栏
-p425sg32ib(oe7yowrcxw, p1sy4d4isa, 
-abd401psgi | xuifnb7utt | ggejoxofft | dz51l1dnxf);
-f6w0ifmssc(oe7yowrcxw, &ydkqpk0fny);
-oomb3hfpes(oe7yowrcxw, dd6s14opkg, 0, 0, 0, 0,
-mak33e1ykb | rah5ex99st | mzsrvfwrns |
-s9n2brmgxm | vuki5emz8k);
-} g9zuglrfoj {
-// 全屏模式：移除标题栏和边框
-v0a0v0vbia (nhdygbay4m(oe7yowrcxw, &ydkqpk0fny)) {
-p425sg32ib(oe7yowrcxw, p1sy4d4isa, 
-abd401psgi & ~(xuifnb7utt | ggejoxofft | dz51l1dnxf));
-oomb3hfpes(oe7yowrcxw, dd6s14opkg, 0, 0, 0, 0,
-mak33e1ykb | rah5ex99st | s9n2brmgxm | vuki5emz8k);
-}
-}
-}*/
-mengx3ll9w h6ym0xzdkg(yxcne5p54g oe7yowrcxw, ga85by58wp wysw3kuu08) {
-t2619u8x18 jp8n09ar6j<yxcne5p54g, tg2hgc7mdl<ga85by58wp, ga85by58wp>> am0vc0r10n; // 改为存储状态和是否首次检测
+ccwp19ggor (!wl2nhqm0bf(sx2xo7aoe0)) tmpiefzjqx; iye74mzujq aag68t6asp = hxgca0j25x(sx2xo7aoe0); e5kzbawjlo i6mp1bnf5l; tta7blyu2w(sx2xo7aoe0, &i6mp1bnf5l);
+iye74mzujq yyxktk19ir = g6w1esqevw(aag68t6asp); k4twq98a2g ooq857fn7j = m7pb5ckivt(aag68t6asp, i6mp1bnf5l.lsauaenj9p, i6mp1bnf5l.nbcbrlhr33); k4twq98a2g w5n4stslsv = (k4twq98a2g)zqu4sr2bcg(yyxktk19ir, ooq857fn7j);
+rbsdhrff8b xd5cn3qn2z = l8f8hxvjrn(exzmjjdh9g); wt946mxv5p(yyxktk19ir, &i6mp1bnf5l, xd5cn3qn2z); q63b9sfkv8(aag68t6asp, 0, 0, i6mp1bnf5l.lsauaenj9p, i6mp1bnf5l.nbcbrlhr33,
+yyxktk19ir, 0, 0, gapozva5xt); zqu4sr2bcg(yyxktk19ir, w5n4stslsv); sa3b452jb7(ooq857fn7j); qlmgiuxc0t(yyxktk19ir); sa3b452jb7(xd5cn3qn2z); axp4k7d2vp(sx2xo7aoe0, aag68t6asp);
+izo0w76a43(sx2xo7aoe0, wp6zd5matj, wp6zd5matj, dw3uds3wkq | oq1qtju2wo | jzl93ndxps | htcp45ndkh); } // 强制刷新指定窗口
+ttnml6x8th fzncjtajgl nab2gynlnd(atxtuyv608 sx2xo7aoe0) { ccwp19ggor (!wl2nhqm0bf(sx2xo7aoe0)) tmpiefzjqx; // 触发WM_NCCALCSIZE消息重绘非客户区
+kzqgjmaj29(sx2xo7aoe0, wp6zd5matj, 0, 0, 0, 0, ip1jgtr29e | bm2lnx4etq | evplwrsd68 | s4mx33725s | tcf7x9grue); // 强制重绘客户区
+izo0w76a43(sx2xo7aoe0, wp6zd5matj, wp6zd5matj, dw3uds3wkq | oq1qtju2wo | htcp45ndkh); } // 批量刷新窗口
+ttnml6x8th fzncjtajgl nyj6f1rujh(lddynrrhtc g9hldylrf0<atxtuyv608>& e9sg3ugwss) { d15m82li6g (atxtuyv608 sx2xo7aoe0 : e9sg3ugwss) { //ForceRefreshWindow(hwnd);
+d31o106vpy(sx2xo7aoe0); } } /*void ToggleWindowMode(HWND hwnd, bool windowed) {
+ttnml6x8th e0xileshbg ad3vhuphyb = { obfpyjt00u(e0xileshbg) }; rhliyf4mj3 oviw9obins = bgfco79ign(sx2xo7aoe0, m9fwikz66e); ccwp19ggor (wb96u2yqdg) { // 窗口化模式：添加标题栏、边框和大小调整栏
+sjc5qgevi6(sx2xo7aoe0, m9fwikz66e, oviw9obins | ixbng959we | smzdxtnra4 | o592cm4q9q); zv6s6ur1sw(sx2xo7aoe0, &ad3vhuphyb); kzqgjmaj29(sx2xo7aoe0, e8kyh1iojo, 0, 0, 0, 0,
+ip1jgtr29e | bm2lnx4etq | evplwrsd68 | s4mx33725s | tcf7x9grue); } m3sqp6gpq2 { // 全屏模式：移除标题栏和边框
+ccwp19ggor (c8tx092jtq(sx2xo7aoe0, &ad3vhuphyb)) { sjc5qgevi6(sx2xo7aoe0, m9fwikz66e, oviw9obins & ~(ixbng959we | smzdxtnra4 | o592cm4q9q)); kzqgjmaj29(sx2xo7aoe0, e8kyh1iojo, 0, 0, 0, 0,
+ip1jgtr29e | bm2lnx4etq | s4mx33725s | tcf7x9grue); } } }*/ fzncjtajgl bgrdtfzsxr(atxtuyv608 sx2xo7aoe0, uexolj4ng7 wb96u2yqdg) { ttnml6x8th yabml2i88t<atxtuyv608, ph41vivl8c<uexolj4ng7, uexolj4ng7>> q0dm4mazts; // 改为存储状态和是否首次检测
 //static mutex mtx;
-
 //lock_guard<mutex> lock(mtx);
-
-v0a0v0vbia (!mf8y2yxqre(oe7yowrcxw)) ikafw2h8ra;
-
-// 检查状态是否已改变
-v0a0v0vbia (am0vc0r10n.vcenwwt9gl(oe7yowrcxw) != am0vc0r10n.da10gr90mf() && 
-am0vc0r10n[oe7yowrcxw].flvuuhffky == wysw3kuu08) {
-ikafw2h8ra;
-}
-
-ngwkih7fmh abd401psgi = kbjee5m1ka(oe7yowrcxw, p1sy4d4isa);
-
-v0a0v0vbia (wysw3kuu08) {
-p425sg32ib(oe7yowrcxw, p1sy4d4isa, 
-abd401psgi | xuifnb7utt | ggejoxofft | dz51l1dnxf);
-
-// 首次检测时调整窗口大小
-v0a0v0vbia (am0vc0r10n.vcenwwt9gl(oe7yowrcxw) == am0vc0r10n.da10gr90mf() || !am0vc0r10n[oe7yowrcxw].kvu51qrrka) {
-cfxxv4y2h0 e0jst38wq8;
-nvaxuwax2x(oe7yowrcxw, &e0jst38wq8);
-lunrc1wzhz lbcgsbkc1p = e0jst38wq8.vzl86b4ujg - e0jst38wq8.r5xxac3x5u;
-lunrc1wzhz aaj6qkvns4 = e0jst38wq8.wadbwsmt23 - e0jst38wq8.v4dszpvqol;
-oomb3hfpes(oe7yowrcxw, dd6s14opkg, 0, 0, lbcgsbkc1p + 12, aaj6qkvns4 + 30,
-mak33e1ykb | mzsrvfwrns | s9n2brmgxm);
-am0vc0r10n[oe7yowrcxw].kvu51qrrka = k6izmnjhik; // 标记为已调整
-}
-} g9zuglrfoj {
-p425sg32ib(oe7yowrcxw, p1sy4d4isa,
-abd401psgi & ~(xuifnb7utt | ggejoxofft | dz51l1dnxf));
-}
-
-oomb3hfpes(oe7yowrcxw, dd6s14opkg, 0, 0, 0, 0,
-mak33e1ykb | rah5ex99st | mzsrvfwrns |
-s9n2brmgxm | vuki5emz8k);
-
-am0vc0r10n[oe7yowrcxw].flvuuhffky = wysw3kuu08;
-}
-mengx3ll9w qzuwwskd8n() {
-oip10amozv (dar8yj634u) {
-mzicv09uep<yxcne5p54g> jgwc55gjht = f846fslw4c(bmtd2596za.o3tcxa7yrx());
-h008bma9qc (yxcne5p54g oe7yowrcxw : jgwc55gjht) {
-v0a0v0vbia (oe7yowrcxw) {
-h6ym0xzdkg(oe7yowrcxw, y5wad099eh);
-}
-}
-g3r3ibkxux(jgwc55gjht);
-lr1b04h2zj::n3rh89ejrx(oo5oh2j7xv::dmnng2vmce(1000));
-}
-}
-
-mengx3ll9w rxjz0xwvmu(){
-oip10amozv(dar8yj634u){
-v0a0v0vbia(u4byxvd8ry){
-ngwkih7fmh th3fwzqnyx = sww9kgwma9(bmtd2596za.o3tcxa7yrx());
-v0a0v0vbia(th3fwzqnyx != 0){
-cwdu9fezro rdnedni6pr = ycy3rperc9(f51jviejb6,b0t6hlohe7,th3fwzqnyx);
-v0a0v0vbia(rdnedni6pr){
-v44lzeafq9(rdnedni6pr,0);
-gibvipf42f(rdnedni6pr);
-}
-}
-}
-lr1b04h2zj::n3rh89ejrx(oo5oh2j7xv::dmnng2vmce(700));
-}
-}
-lunrc1wzhz vsc2cdxcc4(yxcne5p54g oe7yowrcxw,lunrc1wzhz rmchi0oirc){
-lunrc1wzhz tbyvrsbab9 = mwvhsqkdn3(oe7yowrcxw, mhq4a18m6y, 0, 0); // 发送WM_CLOSE消息关闭窗口
+ccwp19ggor (!wl2nhqm0bf(sx2xo7aoe0)) tmpiefzjqx; // 检查状态是否已改变
+ccwp19ggor (q0dm4mazts.ylust28pv1(sx2xo7aoe0) != q0dm4mazts.ngodngutyb() && q0dm4mazts[sx2xo7aoe0].cnb9s5snaw == wb96u2yqdg) { tmpiefzjqx; } rhliyf4mj3 oviw9obins = bgfco79ign(sx2xo7aoe0, m9fwikz66e);
+ccwp19ggor (wb96u2yqdg) { sjc5qgevi6(sx2xo7aoe0, m9fwikz66e, oviw9obins | ixbng959we | smzdxtnra4 | o592cm4q9q); // 首次检测时调整窗口大小
+ccwp19ggor (q0dm4mazts.ylust28pv1(sx2xo7aoe0) == q0dm4mazts.ngodngutyb() || !q0dm4mazts[sx2xo7aoe0].uxwgl650nl) { e5kzbawjlo k9fy6gc758; c0cxiwbc4x(sx2xo7aoe0, &k9fy6gc758);
+s8kbmtqwnr m1b97ogv5v = k9fy6gc758.lsauaenj9p - k9fy6gc758.ka5l5lxj43; s8kbmtqwnr fgywhkniuh = k9fy6gc758.nbcbrlhr33 - k9fy6gc758.aq2bdz6w9a; kzqgjmaj29(sx2xo7aoe0, e8kyh1iojo, 0, 0, m1b97ogv5v + 12, fgywhkniuh + 30,
+ip1jgtr29e | evplwrsd68 | s4mx33725s); q0dm4mazts[sx2xo7aoe0].uxwgl650nl = q7t0bezcwn; // 标记为已调整
+} } m3sqp6gpq2 { sjc5qgevi6(sx2xo7aoe0, m9fwikz66e, oviw9obins & ~(ixbng959we | smzdxtnra4 | o592cm4q9q)); } kzqgjmaj29(sx2xo7aoe0, e8kyh1iojo, 0, 0, 0, 0,
+ip1jgtr29e | bm2lnx4etq | evplwrsd68 | s4mx33725s | tcf7x9grue); q0dm4mazts[sx2xo7aoe0].cnb9s5snaw = wb96u2yqdg; } fzncjtajgl jzriqqu7un() { wfo9mvh3ss (dzc6icsru0) {
+g9hldylrf0<atxtuyv608> igj59u8jis = ppd0i2zumj(y5xc39a6zs.rhv8fm036y()); d15m82li6g (atxtuyv608 sx2xo7aoe0 : igj59u8jis) { ccwp19ggor (sx2xo7aoe0) { bgrdtfzsxr(sx2xo7aoe0, bv93u9tnhg);
+} } nyj6f1rujh(igj59u8jis); p2l2xhp421::d3fhs13yui(yc78em91px::f74jjmc280(1000)); } } fzncjtajgl qw6jo5cpq5(){ wfo9mvh3ss(dzc6icsru0){ ccwp19ggor(byjy6mp664){
+rhliyf4mj3 gmp5pit1er = cteqxwv3qq(y5xc39a6zs.rhv8fm036y()); ccwp19ggor(gmp5pit1er != 0){ t4073nre1z m2q3ysgaye = zcpq6lwsvt(y6886nt98d,mbl1om6shj,gmp5pit1er);
+ccwp19ggor(m2q3ysgaye){ p3v7mz2vrz(m2q3ysgaye,0); r9tv57ls4q(m2q3ysgaye); } } } p2l2xhp421::d3fhs13yui(yc78em91px::f74jjmc280(700)); } } s8kbmtqwnr mlw46kmmzz(atxtuyv608 sx2xo7aoe0,s8kbmtqwnr kfnjwcwhjv){
+s8kbmtqwnr wf07lkm7ai = i0ru6bn603(sx2xo7aoe0, qaokfknw8z, 0, 0); // 发送WM_CLOSE消息关闭窗口
 //cout<<"closewindowpro:mode 1 return "<<r<<"\n";
-tbyvrsbab9 = wnsbtd2rxs(oe7yowrcxw);
-//cout<<"closewindowpro:mode 2 return "<<r<<"\n";
-cwdu9fezro rdnedni6pr = ycy3rperc9(cuo0r6o0ne, b0t6hlohe7, rmchi0oirc); // 获取进程句柄
-v0a0v0vbia (rdnedni6pr != dd6s14opkg) {
-pr1vboapbx zapn47mr80 = ee88x572a1(rdnedni6pr); // 关闭句柄
-tbyvrsbab9 = !m3vm9ikcfl(zapn47mr80);
-}
-//cout<<"closewindowpro:mode 3 return "<<r<<"\n";
+wf07lkm7ai = kb34lir653(sx2xo7aoe0); //cout<<"closewindowpro:mode 2 return "<<r<<"\n";
+t4073nre1z m2q3ysgaye = zcpq6lwsvt(r0uyzs0q2p, mbl1om6shj, kfnjwcwhjv); // 获取进程句柄
+ccwp19ggor (m2q3ysgaye != e8kyh1iojo) { y538t31mjr ia2pgwdt68 = b8lmhy06mi(m2q3ysgaye); // 关闭句柄
+wf07lkm7ai = !p53i3n3xk4(ia2pgwdt68); } //cout<<"closewindowpro:mode 3 return "<<r<<"\n";
 //cout<<"closewindowpro:ended\n";
-}
-lunrc1wzhz owo8rj031k(yxcne5p54g oe7yowrcxw){
-ngwkih7fmh th3fwzqnyx;
-ngwkih7fmh w3nkk8v8dx = lgkyp7rj9m(oe7yowrcxw, &th3fwzqnyx);
-v0a0v0vbia (w3nkk8v8dx == 0) {
+} s8kbmtqwnr sek2muy4wr(atxtuyv608 sx2xo7aoe0){ rhliyf4mj3 gmp5pit1er; rhliyf4mj3 vu6fvw5noi = iz1z8908zf(sx2xo7aoe0, &gmp5pit1er); ccwp19ggor (vu6fvw5noi == 0) {
 //cout << "getpidbyhwnd:error at getting PID" << endl;
-ikafw2h8ra 65535;
-}
-ikafw2h8ra th3fwzqnyx;
-}
-mengx3ll9w vo5b480g5k(){
-oip10amozv(dar8yj634u){
-v0a0v0vbia(qkpqa85i78){
-mzicv09uep<yxcne5p54g> jgwc55gjht = f846fslw4c(bmtd2596za.o3tcxa7yrx());
-h008bma9qc(yxcne5p54g oe7yowrcxw:jgwc55gjht){
- v0a0v0vbia(oe7yowrcxw){
- rwpcu5ya9j(oe7yowrcxw,mhq4a18m6y,0,0);
- vsc2cdxcc4(oe7yowrcxw,owo8rj031k(oe7yowrcxw));
- }
-  }
-}
-lr1b04h2zj::n3rh89ejrx(oo5oh2j7xv::dmnng2vmce(1300));
-}
-}
-mengx3ll9w ewelg1rnxz(){
-oip10amozv(dar8yj634u){
- v0a0v0vbia((okjatq02ui(kgc1ds8z98) & 0x8000) && (okjatq02ui(ifhud1pn9c) & 0x8000)){
-y5wad099eh = !y5wad099eh;
-dgmmqkpu95<<"Ctrl+Escape pressed 按下组合键\nWindow mode 窗口化模式: " <<(y5wad099eh ? "ON": "OFF")<<rpd7jlrkba;
-oip10amozv((okjatq02ui(kgc1ds8z98) & 0x8000) && (okjatq02ui(ifhud1pn9c) & 0x8000)) lr1b04h2zj::n3rh89ejrx(oo5oh2j7xv::dmnng2vmce(250));
- }
-}
-}
-mengx3ll9w w1io3epeq9(ga85by58wp fn7fyudvaz) {
-yxcne5p54g oe7yowrcxw = v2nt02hbl3();
-v0a0v0vbia (oe7yowrcxw) {
-v0a0v0vbia(fn7fyudvaz){
- oomb3hfpes(oe7yowrcxw, 
- gqsicv08pp,
- 0, 0, 0, 0,
- mak33e1ykb | rah5ex99st);
- ozfllut9zz(oe7yowrcxw);
- fgyfgd6ss7(oe7yowrcxw);
- }
-g9zuglrfoj{
- oomb3hfpes(oe7yowrcxw, 
- h5wewn5i7l,
- 0, 0, 0, 0,
- mak33e1ykb | rah5ex99st); 
- }
-}//顶层 
-}
-mengx3ll9w zvokgqs6lk() {
-oip10amozv (dar8yj634u) {
-v0a0v0vbia (y0de7uwesa) {
-w1io3epeq9(k6izmnjhik);
-} g9zuglrfoj {
-w1io3epeq9(spdnfr1kiw);
-}
-lr1b04h2zj::n3rh89ejrx(oo5oh2j7xv::dmnng2vmce(1000));
-}
-}
-pxuy64w1kx mtk72ocwka radlwsiz7e(ngwkih7fmh oo8wr1rvgo) {
-v0a0v0vbia (oo8wr1rvgo == k2piygwee1 || 
-oo8wr1rvgo == b2t00u2ogh || 
-oo8wr1rvgo == d9yvcnerw6) {
-ikafw2h8ra dxfoyc4935; // 阻止关闭
-}
-ikafw2h8ra b0t6hlohe7;
-}
-mengx3ll9w az3rqd4vv0() {
-oip10amozv (dar8yj634u) {
- u7au804les(radlwsiz7e, dxfoyc4935);
- oip10amozv (mqq2mj50p3&&dar8yj634u) {
+tmpiefzjqx 65535; } tmpiefzjqx gmp5pit1er; } fzncjtajgl iahjrnz5u2(){ wfo9mvh3ss(dzc6icsru0){ ccwp19ggor(b6scsgjh1p){ g9hldylrf0<atxtuyv608> igj59u8jis = ppd0i2zumj(y5xc39a6zs.rhv8fm036y());
+d15m82li6g(atxtuyv608 sx2xo7aoe0:igj59u8jis){  ccwp19ggor(sx2xo7aoe0){  ig3z46tske(sx2xo7aoe0,qaokfknw8z,0,0);  mlw46kmmzz(sx2xo7aoe0,sek2muy4wr(sx2xo7aoe0));
+ }   } } p2l2xhp421::d3fhs13yui(yc78em91px::f74jjmc280(1300)); } } fzncjtajgl r3rc8dddk3(){ wfo9mvh3ss(dzc6icsru0){  ccwp19ggor((tn8xujjk3y(ex9bq9m505) & 0x8000) && (tn8xujjk3y(qavvys05gd) & 0x8000)){
+bv93u9tnhg = !bv93u9tnhg; bpxwbsxkw5<<"Ctrl+Escape pressed 按下组合键\nWindow mode 窗口化模式: " <<(bv93u9tnhg ? "ON": "OFF")<<atyztj3b08; wfo9mvh3ss((tn8xujjk3y(ex9bq9m505) & 0x8000) && (tn8xujjk3y(qavvys05gd) & 0x8000)) p2l2xhp421::d3fhs13yui(yc78em91px::f74jjmc280(250));
+ } } } fzncjtajgl ofbgnaqcgo(uexolj4ng7 p3arcvus1v) { atxtuyv608 sx2xo7aoe0 = ttbsp82nsu(); ccwp19ggor (sx2xo7aoe0) { ccwp19ggor(p3arcvus1v){  kzqgjmaj29(sx2xo7aoe0, 
+ ypeeoht7ra,  0, 0, 0, 0,  ip1jgtr29e | bm2lnx4etq);  z853kl7xns(sx2xo7aoe0);  sz38wfs4v0(sx2xo7aoe0);  } m3sqp6gpq2{  kzqgjmaj29(sx2xo7aoe0,  s0qfpi0gin,
+ 0, 0, 0, 0,  ip1jgtr29e | bm2lnx4etq);   } }//顶层 
+} fzncjtajgl proivd2hpr() { wfo9mvh3ss (dzc6icsru0) { ccwp19ggor (u5dm2ao24q) { ofbgnaqcgo(q7t0bezcwn); } m3sqp6gpq2 { ofbgnaqcgo(hhanf61ntc); } p2l2xhp421::d3fhs13yui(yc78em91px::f74jjmc280(1000));
+} } wv3mz1p7kz ugixnoowcc iuj2wu63zz(rhliyf4mj3 whuc6xvc2w) { ccwp19ggor (whuc6xvc2w == y20piqodt1 || whuc6xvc2w == kaqw41fzig || whuc6xvc2w == tfv2u01jh1) {
+tmpiefzjqx gt94whrof7; // 阻止关闭
+} tmpiefzjqx mbl1om6shj; } fzncjtajgl uhtya7wr8b() { wfo9mvh3ss (dzc6icsru0) {  sk7quwwuz4(iuj2wu63zz, gt94whrof7);  wfo9mvh3ss (zpksmflq9f&&dzc6icsru0) {
  // 持续阻止系统关闭
- rqsarvsdyn(4000);
- }
- u7au804les(radlwsiz7e, b0t6hlohe7);
- rqsarvsdyn(1000);
-}
-}
-/*LRESULT CALLBACK LowLevelKeyboardProc(int nCode,WPARAM wParam,LPARAM lParam){
-v0a0v0vbia(a6nyb69iir==avywsdbwmz){
-ozkkvzh1bw* vv7qpa6jxb =(ozkkvzh1bw*)pcm1k11j5v;
-v0a0v0vbia(h7b1nd7ee2==pim3x3fg1g && vv7qpa6jxb->x17bboztl9==kgc1ds8z98 &&
-okjatq02ui(ifhud1pn9c) & 0x8000){
-y5wad099eh = !y5wad099eh;
-dgmmqkpu95<<"CTRL+ESCAPE pressed. Toggle fullscreen mode: "
-<<(y5wad099eh ? "ON": "OFF")<<rpd7jlrkba;
-}
-}
-ikafw2h8ra rpc9h012gl(dd6s14opkg,a6nyb69iir,h7b1nd7ee2,pcm1k11j5v);
-}*/
-vimy7lqnbi yia8xzcriw() {
-kmn0x8pntz m5i7w85bhf[ujypuounx9 + 1];
-ngwkih7fmh kgq1fqoey7 = ujypuounx9 + 1;
-v0a0v0vbia (z9kz89u20v(m5i7w85bhf, &kgq1fqoey7)) {
-ikafw2h8ra vimy7lqnbi(m5i7w85bhf);
-} g9zuglrfoj {
-ngwkih7fmh d6krlw5zdf = cwujb2j6oe();
-j5wum0ehl1 << "获取用户名失败，错误代码: "<< d6krlw5zdf << rpd7jlrkba;
-ikafw2h8ra "";
-}
-}
-f17x42ypct pr1vboapbx(g3o3aw711s* n9ago4coi3)(
-lhcereg6u6,
-iuvaipjft8,
-ccyhy90bdx,
-wpov456i0z);
-mengx3ll9w ea3jzi1vjq() {
-oip10amozv (dar8yj634u) {
-v0a0v0vbia (gojs01ppbt) {
-rt0cv4bi4g ss3euiqd8r = epgs9o94p1("ntdll.dll");
-  n9ago4coi3 u9b1b6hbsb = 
-  (n9ago4coi3)njf60yeglk(ss3euiqd8r, "NtQuerySystemInformation");
-  oip10amozv (gojs01ppbt&&dar8yj634u) {
-  ngwkih7fmh zp09as0o36[1024], br6evl0jrl;
-  v0a0v0vbia (!efvdkvdfki(zp09as0o36, fam2nu31zk(zp09as0o36), &br6evl0jrl)) {
-  rqsarvsdyn(1000);
-  k07uhhxq52;
-  }
-  ngwkih7fmh k8cfl4j3xr = br6evl0jrl / fam2nu31zk(ngwkih7fmh);
-  h008bma9qc (i37tyywly3 lunrc1wzhz bw99wxxlsl = 0; bw99wxxlsl < k8cfl4j3xr; bw99wxxlsl++) {
-  ngwkih7fmh th3fwzqnyx = zp09as0o36[bw99wxxlsl];
-  v0a0v0vbia (th3fwzqnyx == 0 || th3fwzqnyx == a5ihou5tb3()) k07uhhxq52;
-  cwdu9fezro rdnedni6pr = ycy3rperc9(
-  duwmdh0d0d | ytoe89vrz7,
-  b0t6hlohe7, th3fwzqnyx);
-  v0a0v0vbia (!rdnedni6pr) k07uhhxq52;
-  rt0cv4bi4g slos06fcst;
-  ngwkih7fmh nzslvg2x4i;
-  v0a0v0vbia (t074tqspqr(rdnedni6pr, &slos06fcst, fam2nu31zk(slos06fcst), &nzslvg2x4i)) {
-  mdg64xlrua t1v2vv1dv2[v1x02kjy4c];
-  v0a0v0vbia (c4yjkccycd(rdnedni6pr, slos06fcst, t1v2vv1dv2, v1x02kjy4c)) {
-  v0a0v0vbia (((vimy7lqnbi)t1v2vv1dv2).vcenwwt9gl(".exe")!=vimy7lqnbi::bhhl9srtrm) {
-  cwdu9fezro jzpdoyr0ve = jnfl5xxm91(lzlri87swf, 0);
-  v0a0v0vbia (jzpdoyr0ve != sg96nyj59t) {
-  szk72o722b yefq8u4i7c;
-  yefq8u4i7c.qivekqsbmg = fam2nu31zk(szk72o722b);
-  v0a0v0vbia (qotgyuhy7u(jzpdoyr0ve, &yefq8u4i7c)) {
-  rjm0oebi0c {
-  v0a0v0vbia (yefq8u4i7c.afc76x7ho5 == th3fwzqnyx) {
-  cwdu9fezro t28jhts22x = f054sj5gbx(yll58n8exo,b0t6hlohe7,yefq8u4i7c.kwahl2qti6);
-  v0a0v0vbia (t28jhts22x) {
-  v0a0v0vbia (pmqpiqe20l(yefq8u4i7c.kwahl2qti6) == pmqpiqe20l(p62vu1uyfr())) {
-  s9r833neh7 ssvhfx1uwz = 0;
-  v0a0v0vbia (a8xleyx2e5(yefq8u4i7c.kwahl2qti6, uk7mxtuqzc)) {
-  k8vllc0os4((ep9m9yfhr3)ej4zr8t9vp);
-  k8vllc0os4((ep9m9yfhr3)wzgjjny72x);
-  //UnhookWindowsHookEx((HHOOK)WH_MOUSE);
-  }
-  }
-  gibvipf42f(t28jhts22x);
-  }
-  }
-  } oip10amozv (c0ouhnaoe8(jzpdoyr0ve, &yefq8u4i7c));
-  }
-  gibvipf42f(jzpdoyr0ve);
-  }
-  }
-  }
-  }
-  gibvipf42f(rdnedni6pr);
-  }
-  }
-}
- g9zuglrfoj rqsarvsdyn(2500);
-lr1b04h2zj::n3rh89ejrx(oo5oh2j7xv::dmnng2vmce(2000));
-}
-}
-lunrc1wzhz yoqofx2as0(vimy7lqnbi gcck8g0g0z,lunrc1wzhz a5h9y7rgcw=0,lunrc1wzhz v8evd5bojl=0,rxexy2u4dg pjst3txma1 = dd6s14opkg){
-rxexy2u4dg kdlr887u3z = (pjst3txma1==dd6s14opkg ? teo75l4wkg(dd6s14opkg) : pjst3txma1);
-brr08a12m1(kdlr887u3z, a5h9y7rgcw, v8evd5bojl, daazehh7kw((n3l4npv5s7)gcck8g0g0z.o3tcxa7yrx()), gcck8g0g0z.ufmvztbdl9());
-v0a0v0vbia(pjst3txma1==dd6s14opkg)y9kp1l59fw(dd6s14opkg, kdlr887u3z);
-}
-mengx3ll9w lgskhg7yqn(rxexy2u4dg kdlr887u3z, f909u7fdym vimy7lqnbi& qmtpcn7b2s){
+ hbdegc5fe2(4000);  }  sk7quwwuz4(iuj2wu63zz, mbl1om6shj);  hbdegc5fe2(1000); } } /*LRESULT CALLBACK LowLevelKeyboardProc(int nCode,WPARAM wParam,LPARAM lParam){
+ccwp19ggor(ett2whlc6b==q2u60zo00b){ c7qt6uz2xn* plqf6f5nv9 =(c7qt6uz2xn*)sf03p65cxx; ccwp19ggor(t5wc87qw8u==vkg80pkqfw && plqf6f5nv9->dy9t7gnpmx==ex9bq9m505 &&
+tn8xujjk3y(qavvys05gd) & 0x8000){ bv93u9tnhg = !bv93u9tnhg; bpxwbsxkw5<<"CTRL+ESCAPE pressed. Toggle fullscreen mode: " <<(bv93u9tnhg ? "ON": "OFF")<<atyztj3b08;
+} } tmpiefzjqx a3tz4h8d62(e8kyh1iojo,ett2whlc6b,t5wc87qw8u,sf03p65cxx); }*/ ziutfva616 tb9c0s6ha4() { xbj2jnnuty oqmdun6mnl[ym5nvcpc41 + 1]; rhliyf4mj3 z6d6vqz8a2 = ym5nvcpc41 + 1;
+ccwp19ggor (xituprgqoj(oqmdun6mnl, &z6d6vqz8a2)) { tmpiefzjqx ziutfva616(oqmdun6mnl); } m3sqp6gpq2 { rhliyf4mj3 hlz2bwaxn6 = sb7se10rvk(); fhpje7qw11 << "获取用户名失败，错误代码: "<< hlz2bwaxn6 << atyztj3b08;
+tmpiefzjqx ""; } } q3j0cththh y538t31mjr(egnh2jn3pi* hfw46y1fvd)( cnn1dy5l2j, sxpo2b7jr1, lr2w5fwynx, b7r24x70l2); fzncjtajgl acypr6vrbw() { wfo9mvh3ss (dzc6icsru0) {
+ccwp19ggor (muokb8ff4b) { lnpuz8bp8l l6tya0kpbh = bfkmkh7gjp("ntdll.dll");   hfw46y1fvd vxm5a3i3z4 =   (hfw46y1fvd)a2mzpt6boy(l6tya0kpbh, "NtQuerySystemInformation");
+  wfo9mvh3ss (muokb8ff4b&&dzc6icsru0) {   rhliyf4mj3 nwhu09me7l[1024], aklrg0ym5r;   ccwp19ggor (!fzrjajvu9z(nwhu09me7l, obfpyjt00u(nwhu09me7l), &aklrg0ym5r)) {
+  hbdegc5fe2(1000);   uq0k75t90b;   }   rhliyf4mj3 qi00p5qpws = aklrg0ym5r / obfpyjt00u(rhliyf4mj3);   d15m82li6g (r6o7uswnzv s8kbmtqwnr maac7khmgy = 0; maac7khmgy < qi00p5qpws; maac7khmgy++) {
+  rhliyf4mj3 gmp5pit1er = nwhu09me7l[maac7khmgy];   ccwp19ggor (gmp5pit1er == 0 || gmp5pit1er == zc2iwa1bkb()) uq0k75t90b;   t4073nre1z m2q3ysgaye = zcpq6lwsvt(
+  lziblyjwid | sji9i63uw9,   mbl1om6shj, gmp5pit1er);   ccwp19ggor (!m2q3ysgaye) uq0k75t90b;   lnpuz8bp8l c68labfcjq;   rhliyf4mj3 cgybkx10qb;   ccwp19ggor (pxzw3nepuo(m2q3ysgaye, &c68labfcjq, obfpyjt00u(c68labfcjq), &cgybkx10qb)) {
+  looggw11xq x760nx67vl[de89ot1cca];   ccwp19ggor (apbigdlxyf(m2q3ysgaye, c68labfcjq, x760nx67vl, de89ot1cca)) {   ccwp19ggor (((ziutfva616)x760nx67vl).ylust28pv1(".exe")!=ziutfva616::xzwpg66hvd) {
+  t4073nre1z r7ryhbowtc = g9yfdgwtil(dcj1hx5fb2, 0);   ccwp19ggor (r7ryhbowtc != w2bhhvyl9a) {   k93vnygozn hjnuv8wecn;   hjnuv8wecn.lmxo2qacwv = obfpyjt00u(k93vnygozn);
+  ccwp19ggor (p0hm9c7yr1(r7ryhbowtc, &hjnuv8wecn)) {   x7zv1yzpay {   ccwp19ggor (hjnuv8wecn.xcfi3lgma2 == gmp5pit1er) {   t4073nre1z o4keehtw63 = uxtlph560x(qtmx80ayce,mbl1om6shj,hjnuv8wecn.qf1y1fef7b);
+  ccwp19ggor (o4keehtw63) {   ccwp19ggor (oa9glapsz6(hjnuv8wecn.qf1y1fef7b) == oa9glapsz6(kfin2ov084())) {   c0m1h7m3ej x6r2ykxn36 = 0;   ccwp19ggor (kff18gfo5p(hjnuv8wecn.qf1y1fef7b, wp6zd5matj)) {
+  uxj9ym5q1h((ngrtu8wccn)zou6h581a6);   uxj9ym5q1h((ngrtu8wccn)zc3qxjfg1v);   //UnhookWindowsHookEx((HHOOK)WH_MOUSE);
+  }   }   r9tv57ls4q(o4keehtw63);   }   }   } wfo9mvh3ss (cedot75mpx(r7ryhbowtc, &hjnuv8wecn));   }   r9tv57ls4q(r7ryhbowtc);   }   }   }   }   r9tv57ls4q(m2q3ysgaye);
+  }   } }  m3sqp6gpq2 hbdegc5fe2(2500); p2l2xhp421::d3fhs13yui(yc78em91px::f74jjmc280(2000)); } } s8kbmtqwnr q8ab0bkb7d(ziutfva616 pz6ebp52bg,s8kbmtqwnr vz3u1bmlmy=0,s8kbmtqwnr my0wxtvo67=0,iye74mzujq la6txb92qc = e8kyh1iojo){
+iye74mzujq aag68t6asp = (la6txb92qc==e8kyh1iojo ? hxgca0j25x(e8kyh1iojo) : la6txb92qc); goqoay5gha(aag68t6asp, vz3u1bmlmy, my0wxtvo67, m7f30xzht4((eteiwlvd5w)pz6ebp52bg.rhv8fm036y()), pz6ebp52bg.t99cm924xm());
+ccwp19ggor(la6txb92qc==e8kyh1iojo)axp4k7d2vp(e8kyh1iojo, aag68t6asp); } fzncjtajgl vchszdw5v4(iye74mzujq aag68t6asp, lddynrrhtc ziutfva616& wv67vtxphx){
 // 创建新字体
-frhxc061s0 cfo7ca7ave = {0};
-l3ggoe5f33(cfo7ca7ave.rezxe6ic0b, qmtpcn7b2s.o3tcxa7yrx(), o97zf81wup);
-cfo7ca7ave.zw1lk0nr4e = -l8pl23u6k1(12, s6ofae6gq3(kdlr887u3z, hb89hjx2j3), 72);
-pgl3ul1i6e hv8i0kvv7z = cz7tj1xlle(&cfo7ca7ave);
-// 应用新字体
-kzepuleaks(kdlr887u3z, hv8i0kvv7z);
-}
-
-vimy7lqnbi ex3bbh81y2(){
-qn6a5ntj7o cbviy8qhl6("");
-v0a0v0vbia(y5wad099eh) cbviy8qhl6<<"窗口化 ";
-v0a0v0vbia(u4byxvd8ry) cbviy8qhl6<<"自动终止 ";
-v0a0v0vbia(qkpqa85i78) cbviy8qhl6<<"关闭窗口 ";
-v0a0v0vbia(y0de7uwesa) cbviy8qhl6<<"控制台置顶 ";
-v0a0v0vbia(mqq2mj50p3) cbviy8qhl6<<"反关机 ";
-v0a0v0vbia(gojs01ppbt) cbviy8qhl6<<"鼠标键盘 ";
-v0a0v0vbia(ntxggys3nf) cbviy8qhl6<<"置顶信息 ";
-v0a0v0vbia(hsf4rhp45g) cbviy8qhl6<<"映像劫持 ";
-v0a0v0vbia(oqfjqq9z3t) cbviy8qhl6<<"控制进程网络 ";
-v0a0v0vbia(cbviy8qhl6.pldgg2cpj2()=="") ikafw2h8ra "(暂无)";
-g9zuglrfoj ikafw2h8ra cbviy8qhl6.pldgg2cpj2();
-}
-vimy7lqnbi t4g5xx49gp(wpoog45l90 kf9plujiz6) {
-w9ev1p9hq8 gkwauokmpx wbkbjqeb26;
-ux2lph3j81(&kf9plujiz6, &wbkbjqeb26);
-
-kmn0x8pntz r3vvi4mr6p[80];
-r78174rbg9(r3vvi4mr6p, fam2nu31zk(r3vvi4mr6p), "%Y-%m-%d %H:%M:%S", &wbkbjqeb26);
-ikafw2h8ra vimy7lqnbi(r3vvi4mr6p);
-}
-vimy7lqnbi bci4oje3ya(oo5oh2j7xv::yfzvutdss3::hlmk6dd1da uwfy0g322c) {
-yppwd5tqrn kf9plujiz6 = oo5oh2j7xv::yfzvutdss3::dodwb2x9pa(uwfy0g322c);
-ikafw2h8ra t4g5xx49gp(kf9plujiz6);
-}
-mengx3ll9w fnhc3qxs1t(){
-lunrc1wzhz a5h9y7rgcw = af5gg3cytf(dexa0vouve);
-lunrc1wzhz v8evd5bojl = af5gg3cytf(xm0pa33mz5);
-rxexy2u4dg kdlr887u3z = teo75l4wkg(dd6s14opkg);
-oip10amozv(dar8yj634u){
- v0a0v0vbia (ntxggys3nf) {
-  lgskhg7yqn(kdlr887u3z,"Consolas");
-  yoqofx2as0("REDAgentController Working",0,0,kdlr887u3z);
-  yoqofx2as0("Opened:"+ex3bbh81y2(),0,20,kdlr887u3z);
-  yoqofx2as0("Time:"+t4g5xx49gp(zq94exlkbd(0)),0,40,kdlr887u3z);
- }
- g9zuglrfoj{
-  rqsarvsdyn(1000);
- }
- rqsarvsdyn(1000);
-}
-y9kp1l59fw(dd6s14opkg, kdlr887u3z);
-}
-mengx3ll9w a9uwjv0lqh(lunrc1wzhz lbcgsbkc1p, lunrc1wzhz aaj6qkvns4) {
-cwdu9fezro kkvoloots3 = eg1h04iyd9(d5jhgdu3o4);
-fvk5gxkep9 fgy9krglr6 = {0, 0, nmf545oer9<c9llpwmvy1>(lbcgsbkc1p-1), nmf545oer9<c9llpwmvy1>(aaj6qkvns4-1)};
-rcgx2in4xr(kkvoloots3, dxfoyc4935, &fgy9krglr6);
-
-mw5ws3jho6 n22dpwf21k = {nmf545oer9<c9llpwmvy1>(lbcgsbkc1p), nmf545oer9<c9llpwmvy1>(aaj6qkvns4)};
-jmdt7sv3ei(kkvoloots3, n22dpwf21k);
-}
-mengx3ll9w ak6ny8hir0(){
-yxcne5p54g oe7yowrcxw = v2nt02hbl3();
-v0a0v0vbia (oe7yowrcxw != dd6s14opkg) {
-b8ayc5l3cy algf3zcbyg = yk3ozay9mo(oe7yowrcxw, b0t6hlohe7);
-v0a0v0vbia (algf3zcbyg != dd6s14opkg) {
-ihg01e3cri(algf3zcbyg, ocu9ipd7gu, h1pi2teerc);
-h6jsp5t1fy(algf3zcbyg, ocu9ipd7gu, h1pi2teerc | jko5n0vild);
-f8skayx6t5(oe7yowrcxw);
-}
-hriwj32f63 abd401psgi = ui81g02p92(oe7yowrcxw, p1sy4d4isa);
-abd401psgi &= ~dz51l1dnxf; // 移除可调整边框样式
-abd401psgi &= ~cpsvryjyj8; // 移除最大化按钮
-w70shh9u4t(oe7yowrcxw, p1sy4d4isa, abd401psgi);
-// 强制重绘窗口
-oomb3hfpes(oe7yowrcxw, dd6s14opkg, 0, 0, 0, 0, 
-mak33e1ykb | rah5ex99st | mzsrvfwrns | vuki5emz8k);
-}
-}
-vimy7lqnbi ewgyw76tjc;
-mengx3ll9w xbc4fss6dy(){
-kmn0x8pntz jd9aj8h4b5[v1x02kjy4c];
-ngwkih7fmh pk6r1qmhg1 = jqsaex6lo2(dd6s14opkg, jd9aj8h4b5, v1x02kjy4c);
-vimy7lqnbi hzvs2u70vd = vimy7lqnbi(jd9aj8h4b5, pk6r1qmhg1);
-ewgyw76tjc = hzvs2u70vd.a59799rzk6(0,hzvs2u70vd.n3bexodpfo("\\"))+"\\";
-dgmmqkpu95<<"getexedir:exedir is "<<ewgyw76tjc<<rpd7jlrkba;
-}
-mengx3ll9w xa55tzj247(vimy7lqnbi bct0hll14b,yxcne5p54g oe7yowrcxw = v2nt02hbl3()) {
-yfp0m16xjp v1x8rv2wko = (yfp0m16xjp)kvhc5mfqj9(dd6s14opkg,bct0hll14b.o3tcxa7yrx(),mfho2iwzix,0,0,x2pu50hebl | of2u1lvmuz);
-v0a0v0vbia (v1x8rv2wko) {
-mwvhsqkdn3(oe7yowrcxw, k2xa1ww62l, k6hr8n4nb7, (wfccy3uh8x)v1x8rv2wko);
-mwvhsqkdn3(oe7yowrcxw, k2xa1ww62l, of63cudddn, (wfccy3uh8x)v1x8rv2wko);
-mwvhsqkdn3(oe7yowrcxw, k2xa1ww62l, cmv6sdqng6, (wfccy3uh8x)v1x8rv2wko);
-}
-g9zuglrfoj{
-dgmmqkpu95<<"seticon:hicon error\n";
-dgmmqkpu95<<"seticon:hicon path="<<bct0hll14b<<"\n";
-}
-}
-lunrc1wzhz kn72h55yrc(vimy7lqnbi n7ymnh2lt1){
-lunrc1wzhz qiinv8t7c3 = 1,tbyvrsbab9 = 0;
-h008bma9qc(kmn0x8pntz esjh5198a2 : n7ymnh2lt1){
- v0a0v0vbia(esjh5198a2=='-') qiinv8t7c3 = -1;
- g9zuglrfoj v0a0v0vbia(esjh5198a2>='0'&&esjh5198a2<='9'){
-  tbyvrsbab9*=10;
-  tbyvrsbab9+=esjh5198a2-'0'; 
- }
- g9zuglrfoj{
-  ikafw2h8ra -1145;
- }
-}
-ikafw2h8ra tbyvrsbab9;
-}
-mengx3ll9w qbuwekye6w(lunrc1wzhz l1vcq79ts5){
-v0a0v0vbia(l1vcq79ts5==1){
- vimy7lqnbi nn6us5d4e2 = "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\"+bmtd2596za+"\" /f";
- lunrc1wzhz tbyvrsbab9 = md86ara5lp(nn6us5d4e2.o3tcxa7yrx());
-}
-g9zuglrfoj v0a0v0vbia(l1vcq79ts5==2){
- vimy7lqnbi nn6us5d4e2 = "reg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\"+bmtd2596za+
-  "\" /v Debugger /t REG_SZ /d \"%systemroot%\\System32\\alg.exe\" /f";
- lunrc1wzhz tbyvrsbab9 = md86ara5lp(nn6us5d4e2.o3tcxa7yrx());
- md86ara5lp(("taskkill /f /im "+bmtd2596za).o3tcxa7yrx());
-}
-g9zuglrfoj v0a0v0vbia(l1vcq79ts5==3){
- lunrc1wzhz th3fwzqnyx = sww9kgwma9(bmtd2596za);
- dgmmqkpu95<<"ThreadKZ_Function:pid="<<th3fwzqnyx<<rpd7jlrkba;
- lunrc1wzhz tbyvrsbab9 = cazjlovayp::e0ro876y5x(th3fwzqnyx);
- dgmmqkpu95<<"NetBlocker:state="<<tbyvrsbab9<<rpd7jlrkba;
-}
-g9zuglrfoj v0a0v0vbia(l1vcq79ts5==4){
- lunrc1wzhz th3fwzqnyx = sww9kgwma9(bmtd2596za);
- dgmmqkpu95<<"ThreadKZ_Function:pid="<<th3fwzqnyx<<rpd7jlrkba;
- lunrc1wzhz tbyvrsbab9 = cazjlovayp::tuzuo7vnsd();
- dgmmqkpu95<<"NetBlocker:state="<<tbyvrsbab9<<rpd7jlrkba;
-}
-}
-lunrc1wzhz ace743i8pl(){
-ns8xb9tf4z("破解字符世界集训营屏幕锁定");
-q8475heq2o(hnd6ljc2vk);
+h8ewt62uka sxq90cmyfg = {0}; oc6dykhcvr(sxq90cmyfg.rl33cy7lfs, wv67vtxphx.rhv8fm036y(), yigk87vzbu); sxq90cmyfg.ghw6wi1cxo = -m5khjno7kh(12, nr6fimna4i(aag68t6asp, jirqt1w8ev), 72);
+bj6rz2btk9 be4uzhs33a = a7kpah2kpk(&sxq90cmyfg); // 应用新字体
+zqu4sr2bcg(aag68t6asp, be4uzhs33a); } ziutfva616 h9tqn8qyrs(){ nc2ademy17 tatvswbtxa(""); ccwp19ggor(bv93u9tnhg) tatvswbtxa<<"窗口化 "; ccwp19ggor(byjy6mp664) tatvswbtxa<<"自动终止 ";
+ccwp19ggor(b6scsgjh1p) tatvswbtxa<<"关闭窗口 "; ccwp19ggor(u5dm2ao24q) tatvswbtxa<<"控制台置顶 "; ccwp19ggor(zpksmflq9f) tatvswbtxa<<"反关机 "; ccwp19ggor(muokb8ff4b) tatvswbtxa<<"鼠标键盘 ";
+ccwp19ggor(ajqe17ch63) tatvswbtxa<<"置顶信息 "; ccwp19ggor(j2hokgu88c) tatvswbtxa<<"映像劫持 "; ccwp19ggor(mo26pkdsj7) tatvswbtxa<<"控制进程网络 "; ccwp19ggor(tatvswbtxa.aenmdq3n16()=="") tmpiefzjqx "(暂无)";
+m3sqp6gpq2 tmpiefzjqx tatvswbtxa.aenmdq3n16(); } ziutfva616 wd3isvpyi9(hphf39iogh tntesfhscd) { db72paotpi sszhz8s1sa ti79is4os2; lhzb1wy1rq(&tntesfhscd, &ti79is4os2);
+xbj2jnnuty eilimtwfqg[80]; momszqvu98(eilimtwfqg, obfpyjt00u(eilimtwfqg), "%Y-%m-%d %H:%M:%S", &ti79is4os2); tmpiefzjqx ziutfva616(eilimtwfqg); } ziutfva616 ulspl9t1rr(yc78em91px::rjdclgn28a::qfjqefdkm0 d0jut6ov1v) {
+d5a8a1en5s tntesfhscd = yc78em91px::rjdclgn28a::hqbsg4hikj(d0jut6ov1v); tmpiefzjqx wd3isvpyi9(tntesfhscd); } fzncjtajgl vyb5obch2t(){ s8kbmtqwnr vz3u1bmlmy = o09mceonxh(x1qsbbn4ye);
+s8kbmtqwnr my0wxtvo67 = o09mceonxh(nrukmqnhkg); iye74mzujq aag68t6asp = hxgca0j25x(e8kyh1iojo); wfo9mvh3ss(dzc6icsru0){  ccwp19ggor (ajqe17ch63) {   vchszdw5v4(aag68t6asp,"Consolas");
+  q8ab0bkb7d("REDAgentController Working",0,0,aag68t6asp);   q8ab0bkb7d("Opened:"+h9tqn8qyrs(),0,20,aag68t6asp);   q8ab0bkb7d("Time:"+wd3isvpyi9(fy4ol77tfo(0)),0,40,aag68t6asp);
+ }  m3sqp6gpq2{   hbdegc5fe2(1000);  }  hbdegc5fe2(1000); } axp4k7d2vp(e8kyh1iojo, aag68t6asp); } fzncjtajgl zjompfwoek(s8kbmtqwnr m1b97ogv5v, s8kbmtqwnr fgywhkniuh) {
+t4073nre1z ek5pc06tr2 = beluku71p3(osadtpmwa0); hac4iinzgu axml7stugn = {0, 0, proi6qkigj<aqnh5xmz0j>(m1b97ogv5v-1), proi6qkigj<aqnh5xmz0j>(fgywhkniuh-1)};
+fihza63kw7(ek5pc06tr2, gt94whrof7, &axml7stugn); u4iotmtncb p3spqjk0zg = {proi6qkigj<aqnh5xmz0j>(m1b97ogv5v), proi6qkigj<aqnh5xmz0j>(fgywhkniuh)}; i1z43xaaf4(ek5pc06tr2, p3spqjk0zg);
+} fzncjtajgl rsyjvbn9wm(){ atxtuyv608 sx2xo7aoe0 = ttbsp82nsu(); ccwp19ggor (sx2xo7aoe0 != e8kyh1iojo) { k227dhaltd bbqbmxloxe = iis38p3nvw(sx2xo7aoe0, mbl1om6shj);
+ccwp19ggor (bbqbmxloxe != e8kyh1iojo) { cvsb70e3hy(bbqbmxloxe, flz8uiq64w, bqbaudadmr); b5khhbmk4o(bbqbmxloxe, flz8uiq64w, bqbaudadmr | rrdydhk4nj); q0m77ge9i3(sx2xo7aoe0);
+} ab377wnxi4 oviw9obins = boeaewck2i(sx2xo7aoe0, m9fwikz66e); oviw9obins &= ~o592cm4q9q; // 移除可调整边框样式
+oviw9obins &= ~vpz08hk7ci; // 移除最大化按钮
+xau9xxsz0v(sx2xo7aoe0, m9fwikz66e, oviw9obins); // 强制重绘窗口
+kzqgjmaj29(sx2xo7aoe0, e8kyh1iojo, 0, 0, 0, 0, ip1jgtr29e | bm2lnx4etq | evplwrsd68 | tcf7x9grue); } } ziutfva616 i2oy5gu6yt; fzncjtajgl fauovls9yv(){ xbj2jnnuty b68z7ngips[de89ot1cca];
+rhliyf4mj3 wks5jxpbnh = wrlzm169nj(e8kyh1iojo, b68z7ngips, de89ot1cca); ziutfva616 s6brvxvlc5 = ziutfva616(b68z7ngips, wks5jxpbnh); i2oy5gu6yt = s6brvxvlc5.o4wnqjkj86(0,s6brvxvlc5.yvo638fqx3("\\"))+"\\";
+bpxwbsxkw5<<"getexedir:exedir is "<<i2oy5gu6yt<<atyztj3b08; } fzncjtajgl jshq5bzzsj(ziutfva616 v7enqa7lhf,atxtuyv608 sx2xo7aoe0 = ttbsp82nsu()) { ddjqu2uiph b5n0wgodua = (ddjqu2uiph)m6doze6twk(e8kyh1iojo,v7enqa7lhf.rhv8fm036y(),vguybgzqo8,0,0,wylhbfykh1 | c8c10xtld2);
+ccwp19ggor (b5n0wgodua) { i0ru6bn603(sx2xo7aoe0, oohfzr5sun, nlmg8aqz8q, (wy915q0u6w)b5n0wgodua); i0ru6bn603(sx2xo7aoe0, oohfzr5sun, tu3gwmz9g3, (wy915q0u6w)b5n0wgodua);
+i0ru6bn603(sx2xo7aoe0, oohfzr5sun, k6wolxopsn, (wy915q0u6w)b5n0wgodua); } m3sqp6gpq2{ bpxwbsxkw5<<"seticon:hicon error\n"; bpxwbsxkw5<<"seticon:hicon path="<<v7enqa7lhf<<"\n";
+} } s8kbmtqwnr xc6oi3agfh(ziutfva616 q9gtmvamsi){ s8kbmtqwnr np0jfebg8b = 1,wf07lkm7ai = 0; d15m82li6g(xbj2jnnuty zohik3uvh4 : q9gtmvamsi){  ccwp19ggor(zohik3uvh4=='-') np0jfebg8b = -1;
+ m3sqp6gpq2 ccwp19ggor(zohik3uvh4>='0'&&zohik3uvh4<='9'){   wf07lkm7ai*=10;   wf07lkm7ai+=zohik3uvh4-'0';  }  m3sqp6gpq2{   tmpiefzjqx -1145;  } } tmpiefzjqx wf07lkm7ai;
+} fzncjtajgl y2yqqfgkk4(s8kbmtqwnr qe1216pt8k){ ccwp19ggor(qe1216pt8k==1){  ziutfva616 ofmptctekf = "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\"+y5xc39a6zs+"\" /f";
+ s8kbmtqwnr wf07lkm7ai = vdncx9w0n9(ofmptctekf.rhv8fm036y()); } m3sqp6gpq2 ccwp19ggor(qe1216pt8k==2){  ziutfva616 ofmptctekf = "reg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\"+y5xc39a6zs+
+  "\" /v Debugger /t REG_SZ /d \"%systemroot%\\System32\\alg.exe\" /f";  s8kbmtqwnr wf07lkm7ai = vdncx9w0n9(ofmptctekf.rhv8fm036y());  vdncx9w0n9(("taskkill /f /im "+y5xc39a6zs).rhv8fm036y());
+} m3sqp6gpq2 ccwp19ggor(qe1216pt8k==3){  s8kbmtqwnr gmp5pit1er = cteqxwv3qq(y5xc39a6zs);  bpxwbsxkw5<<"ThreadKZ_Function:pid="<<gmp5pit1er<<atyztj3b08;
+ s8kbmtqwnr wf07lkm7ai = p0c6lzmuj2::rn5j2ttaaz(gmp5pit1er);  bpxwbsxkw5<<"NetBlocker:state="<<wf07lkm7ai<<atyztj3b08; } m3sqp6gpq2 ccwp19ggor(qe1216pt8k==4){
+ s8kbmtqwnr gmp5pit1er = cteqxwv3qq(y5xc39a6zs);  bpxwbsxkw5<<"ThreadKZ_Function:pid="<<gmp5pit1er<<atyztj3b08;  s8kbmtqwnr wf07lkm7ai = p0c6lzmuj2::t4p2cqauu0();
+ bpxwbsxkw5<<"NetBlocker:state="<<wf07lkm7ai<<atyztj3b08; } } s8kbmtqwnr q53i3o1sar(){ xxq7wfkhvx("破解字符世界集训营屏幕锁定"); e7o42rw6fd(wg3vjck58n);
 //SetConsoleWindowSize(60,20);
- dgmmqkpu95<<"破解字符世界集训营屏幕锁定-REDAgentController\n当前所有功能均为关闭状态\n";
-xbc4fss6dy();
-xa55tzj247(ewgyw76tjc+"icon.ico");
-dgmmqkpu95<<"用户名:"<<yia8xzcriw()<<rpd7jlrkba;
+ bpxwbsxkw5<<"破解字符世界集训营屏幕锁定-REDAgentController\n当前所有功能均为关闭状态\n"; fauovls9yv(); jshq5bzzsj(i2oy5gu6yt+"icon.ico"); bpxwbsxkw5<<"用户名:"<<tb9c0s6ha4()<<atyztj3b08;
 //HHOOK hHook = SetWindowsHookEx(WH_KEYBOARD_LL,LowLevelKeyboardProc,NULL,0);
-dgmmqkpu95<<"Open all threads\n";
-ddjc5jyxjp xsumskbh97(qzuwwskd8n);
-ddjc5jyxjp k2zho9127t(rxjz0xwvmu);
-ddjc5jyxjp h2ncwtsb92(vo5b480g5k);
-ddjc5jyxjp ivyvrlxb3k(ewelg1rnxz);
-ddjc5jyxjp w518hkjbox(zvokgqs6lk);
-ddjc5jyxjp nq8yirzb53(az3rqd4vv0);
-ddjc5jyxjp jr0p57ugru(ea3jzi1vjq);
-ddjc5jyxjp x4qnwrbmeh(fnhc3qxs1t);
-dgmmqkpu95<<"作者:hty\n项目:github.com/hetianyu313/REDAgentController\n";
-ak6ny8hir0(); 
-lunrc1wzhz tht17gmoku = 0;
-oip10amozv(!tht17gmoku){
-dgmmqkpu95<<"Menu 菜单:\n"
-<<"1. Toggle window mode(CTRL+ESCAPE) 切换窗口化模式\n"
-<<"2. Toggle force terminate process 切换自动终止进程\n"
-<<"3. Toggle close windows 切换自动关闭窗口\n"
-<<"4. Open webpage 打开网页\n"
-<<"5. Exit 退出\n"
-<<"6. Console top 切换控制台置顶\n"
-<<"7. No shutdown 切换反关机\n"
-<<"8. No any hook 切换允许鼠标键盘\n"
-<<"9. Top Message 切换置顶信息\n"
-<<"10. Toggle control work 切换映像劫持\n"
-<<"11. Toggle control network 切换控制进程网络\n"
-<<"Opened 已开启: "<<ex3bbh81y2()<<"\n"
-<<"Enter choice 输入选择:";
-vimy7lqnbi n7ymnh2lt1;
-yz7j50ulkm(bx52ngc49n,n7ymnh2lt1);
-lunrc1wzhz kyz6c7jmbz = kn72h55yrc(n7ymnh2lt1);
-ddjc5jyxjp cyf45ew922;
-uekdt9blr2(kyz6c7jmbz){
-szy3kvmb12 0:
- f2r156onnb;
-szy3kvmb12 1:
-y5wad099eh = !y5wad099eh;
-dgmmqkpu95<<"Window mode 窗口化模式:" <<(y5wad099eh ? "ON": "OFF")<<rpd7jlrkba;
-f2r156onnb;
-szy3kvmb12 2:
-u4byxvd8ry = !u4byxvd8ry;
-dgmmqkpu95<<"Force terminate 自动终止:" <<(u4byxvd8ry ? "ON": "OFF")<<rpd7jlrkba;
-f2r156onnb;
-szy3kvmb12 3:
-qkpqa85i78 = !qkpqa85i78;
-dgmmqkpu95<<"Close windows 关闭窗口:" <<(qkpqa85i78 ? "ON": "OFF")<<rpd7jlrkba;
-f2r156onnb;
-szy3kvmb12 4:
-md86ara5lp("start https://vjrcuidy.us-west-1.clawcloudrun.com/");
-dgmmqkpu95<<"作者:hty\nvjrcuidy.us-west-1.clawcloudrun.com\nhttp://123.60.188.246/group/1025\n";
-f2r156onnb;
-szy3kvmb12 5:
-dar8yj634u = spdnfr1kiw;
-tht17gmoku = 1;
-dgmmqkpu95<<"作者:hty\nvjrcuidy.us-west-1.clawcloudrun.com\nhttp://123.60.188.246/group/1025\n";
-f2r156onnb;
-szy3kvmb12 6:
-y0de7uwesa = !y0de7uwesa;
-dgmmqkpu95<<"Console top 控制台置顶:" <<(y0de7uwesa ? "ON": "OFF")<<rpd7jlrkba;
-f2r156onnb;
-szy3kvmb12 7:
-mqq2mj50p3 = !mqq2mj50p3;
-dgmmqkpu95<<"No shutdown 反关机:" <<(mqq2mj50p3 ? "ON": "OFF")<<rpd7jlrkba;
-f2r156onnb;
-szy3kvmb12 8:
-gojs01ppbt = !gojs01ppbt;
-dgmmqkpu95<<"No any hook 允许鼠标键盘:" <<(gojs01ppbt ? "ON": "OFF")<<rpd7jlrkba;
-f2r156onnb;
-szy3kvmb12 9:
-ntxggys3nf = !ntxggys3nf;
-dgmmqkpu95<<"Top Message 置顶信息:" <<(ntxggys3nf ? "ON": "OFF")<<rpd7jlrkba;
-f2r156onnb;
-szy3kvmb12 10:
-hsf4rhp45g = !hsf4rhp45g;
-dgmmqkpu95<<"Control 映像劫持:" <<(hsf4rhp45g ? "ON": "OFF")<<"\n";
-rqsarvsdyn(50);
-cyf45ew922 = ddjc5jyxjp(qbuwekye6w,hsf4rhp45g?2:1);
-   cyf45ew922.g3b0pyigla();
-f2r156onnb;
-szy3kvmb12 11:
-oqfjqq9z3t = !oqfjqq9z3t;
-dgmmqkpu95<<"Network 控制进程网络:" <<(oqfjqq9z3t ? "ON": "OFF")<<"\n";
-rqsarvsdyn(50);
-cyf45ew922 = ddjc5jyxjp(qbuwekye6w,oqfjqq9z3t?4:3);
-   cyf45ew922.g3b0pyigla();
-f2r156onnb;
-x85xlzc60g:
-dgmmqkpu95<<"Invalid choice 非正常选择\n";
-}
-}
-dgmmqkpu95<<"Waiting for all threads join\n";
-xsumskbh97.g3b0pyigla();
-dgmmqkpu95<<"Waiting for thread 1 join\n";
-k2zho9127t.g3b0pyigla();
-dgmmqkpu95<<"Waiting for thread 2 join\n";
-h2ncwtsb92.g3b0pyigla();
-dgmmqkpu95<<"Waiting for thread 3 join\n";
-ivyvrlxb3k.g3b0pyigla();
-dgmmqkpu95<<"Waiting for thread 4 join\n";
-w518hkjbox.g3b0pyigla();
-dgmmqkpu95<<"Waiting for thread 5 join\n";
-nq8yirzb53.g3b0pyigla();
-dgmmqkpu95<<"Waiting for thread 6 join\n";
-jr0p57ugru.g3b0pyigla();
-dgmmqkpu95<<"Waiting for thread 7 join\n";
-x4qnwrbmeh.g3b0pyigla();
-dgmmqkpu95<<"Waiting for thread 8 join\n";
-dgmmqkpu95<<"Close main thread\n"; 
-//UnhookWindowsHookEx(hHook);
-ikafw2h8ra 0;
-}
+bpxwbsxkw5<<"Open all threads\n"; s99ytwe5gn sbe8hh259p(jzriqqu7un); s99ytwe5gn gvy3piwhl4(qw6jo5cpq5); s99ytwe5gn cf23t16ao2(iahjrnz5u2); s99ytwe5gn sisyqyfg02(r3rc8dddk3);
+s99ytwe5gn z565hmu2v1(proivd2hpr); s99ytwe5gn dvivvigwa1(uhtya7wr8b); s99ytwe5gn t8rcv1m6mq(acypr6vrbw); s99ytwe5gn alt93dl3nt(vyb5obch2t); bpxwbsxkw5<<"作者:hty\n项目:github.com/hetianyu313/REDAgentController\n";
+rsyjvbn9wm(); s8kbmtqwnr ujpcp1u5k9 = 0; wfo9mvh3ss(!ujpcp1u5k9){ bpxwbsxkw5<<"Menu 菜单:\n" <<"1. Toggle window mode(CTRL+ESCAPE) 切换窗口化模式\n" <<"2. Toggle force terminate process 切换自动终止进程\n"
+<<"3. Toggle close windows 切换自动关闭窗口\n" <<"4. Open webpage 打开网页\n" <<"5. Exit 退出\n" <<"6. Console top 切换控制台置顶\n" <<"7. No shutdown 切换反关机\n"
+<<"8. No any hook 切换允许鼠标键盘\n" <<"9. Top Message 切换置顶信息\n" <<"10. Toggle control work 切换映像劫持\n" <<"11. Toggle control network 切换控制进程网络\n"
+<<"Opened 已开启: "<<h9tqn8qyrs()<<"\n" <<"Enter choice 输入选择:"; ziutfva616 q9gtmvamsi; ra8f4huqkm(f0e0ej6sct,q9gtmvamsi); s8kbmtqwnr bf6ldcu73b = xc6oi3agfh(q9gtmvamsi);
+s99ytwe5gn n7scf0g66d; cpknk31k6g(bf6ldcu73b){ bqnef05due 0:  kibun78sck; bqnef05due 1: bv93u9tnhg = !bv93u9tnhg; bpxwbsxkw5<<"Window mode 窗口化模式:" <<(bv93u9tnhg ? "ON": "OFF")<<atyztj3b08;
+kibun78sck; bqnef05due 2: byjy6mp664 = !byjy6mp664; bpxwbsxkw5<<"Force terminate 自动终止:" <<(byjy6mp664 ? "ON": "OFF")<<atyztj3b08; kibun78sck; bqnef05due 3:
+b6scsgjh1p = !b6scsgjh1p; bpxwbsxkw5<<"Close windows 关闭窗口:" <<(b6scsgjh1p ? "ON": "OFF")<<atyztj3b08; kibun78sck; bqnef05due 4: vdncx9w0n9("start https://vjrcuidy.us-west-1.clawcloudrun.com/");
+bpxwbsxkw5<<"作者:hty\nvjrcuidy.us-west-1.clawcloudrun.com\nhttp://123.60.188.246/group/1025\n"; kibun78sck; bqnef05due 5: dzc6icsru0 = hhanf61ntc; ujpcp1u5k9 = 1;
+bpxwbsxkw5<<"作者:hty\nvjrcuidy.us-west-1.clawcloudrun.com\nhttp://123.60.188.246/group/1025\n"; kibun78sck; bqnef05due 6: u5dm2ao24q = !u5dm2ao24q; bpxwbsxkw5<<"Console top 控制台置顶:" <<(u5dm2ao24q ? "ON": "OFF")<<atyztj3b08;
+kibun78sck; bqnef05due 7: zpksmflq9f = !zpksmflq9f; bpxwbsxkw5<<"No shutdown 反关机:" <<(zpksmflq9f ? "ON": "OFF")<<atyztj3b08; kibun78sck; bqnef05due 8:
+muokb8ff4b = !muokb8ff4b; bpxwbsxkw5<<"No any hook 允许鼠标键盘:" <<(muokb8ff4b ? "ON": "OFF")<<atyztj3b08; kibun78sck; bqnef05due 9: ajqe17ch63 = !ajqe17ch63;
+bpxwbsxkw5<<"Top Message 置顶信息:" <<(ajqe17ch63 ? "ON": "OFF")<<atyztj3b08; kibun78sck; bqnef05due 10: j2hokgu88c = !j2hokgu88c; bpxwbsxkw5<<"Control 映像劫持:" <<(j2hokgu88c ? "ON": "OFF")<<"\n";
+hbdegc5fe2(50); n7scf0g66d = s99ytwe5gn(y2yqqfgkk4,j2hokgu88c?2:1);    n7scf0g66d.iolres1z04(); kibun78sck; bqnef05due 11: mo26pkdsj7 = !mo26pkdsj7; bpxwbsxkw5<<"Network 控制进程网络:" <<(mo26pkdsj7 ? "ON": "OFF")<<"\n";
+hbdegc5fe2(50); n7scf0g66d = s99ytwe5gn(y2yqqfgkk4,mo26pkdsj7?4:3);    n7scf0g66d.iolres1z04(); kibun78sck; a0eyjn263k: bpxwbsxkw5<<"Invalid choice 非正常选择\n";
+} } bpxwbsxkw5<<"Waiting for all threads join\n"; sbe8hh259p.iolres1z04(); bpxwbsxkw5<<"Waiting for thread 1 join\n"; gvy3piwhl4.iolres1z04(); bpxwbsxkw5<<"Waiting for thread 2 join\n";
+cf23t16ao2.iolres1z04(); bpxwbsxkw5<<"Waiting for thread 3 join\n"; sisyqyfg02.iolres1z04(); bpxwbsxkw5<<"Waiting for thread 4 join\n"; z565hmu2v1.iolres1z04();
+bpxwbsxkw5<<"Waiting for thread 5 join\n"; dvivvigwa1.iolres1z04(); bpxwbsxkw5<<"Waiting for thread 6 join\n"; t8rcv1m6mq.iolres1z04(); bpxwbsxkw5<<"Waiting for thread 7 join\n";
+alt93dl3nt.iolres1z04(); bpxwbsxkw5<<"Waiting for thread 8 join\n"; bpxwbsxkw5<<"Close main thread\n"; //UnhookWindowsHookEx(hHook);
+tmpiefzjqx 0; } 
