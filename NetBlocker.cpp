@@ -1,68 +1,68 @@
-#define amyzjvx1rg BOOL
-#define whw8fvasp4 BYTE
-#define w539bauaeu DWORD
-#define trsd2xo21w FALSE
-#define qcto86r2c5 GetCurrentProcessId
-#define kkjf46lx71 GetProcAddress
-#define ig2eljocgb HMODULE
-#define nksceenzfw HookedConnect
-#define z8g5sga4w6 LPVOID
-#define f29rz37sb8 LoadLibrary
-#define jupczpb5f6 PAGE_EXECUTE_READWRITE
-#define esokfycy4u RemoveHook
-#define ltdm62qezz SOCKET
-#define ax07vebnus SOCKET_ERROR
-#define zmh2qbl05j SetHook
-#define fd3yop0zyv TRUE
-#define vwmcciwjgt VirtualProtect
-#define x1espdvped WINAPI
-#define kmni2j2qo1 WSAEACCES
-#define cc57o847qa WSASetLastError
-#define qwq9v9xkhm bool
-#define x7w5p9wt2i cerr
-#define gysc6xyfv2 cin
-#define e5i3twlwkh const
-#define mp4gt1yhwk cout
-#define zvwnssomx8 else
-#define b5bou6u2mx endl
-#define j3axw6uwr1 false
-#define t0nb6tc3ss g_originalBytes
-#define h1hqiyugmt g_pOriginalConnect
-#define n5qf1jm40w g_targetPid
-#define mfpyd2824g get
-#define pyrn3y8sjw getchar
-#define lr7667gdmc hWs2
-#define yplxcpbs3f hooked_connect
-#define y2fd2rulmw if
-#define i6d4tkre8o ignore
-#define rrc49xghzi int
-#define q2gvyjys37 jmp
-#define ifhyks2hjr main_nwb
-#define xhger04dmd memcpy
-#define ofzv15nweo memset
-#define cjondz2x6u name
-#define raat6i3pjz namelen
-#define knzuq5esra namespace
-#define h29z8iitq9 nullptr
-#define zlwlhopgnk nwb
-#define v8mqhtqhyq nwb_old
-#define icp647z0xo oldProtect
-#define dtd5s2mcof old_protect
-#define me9a95fsmv original_bytes
-#define lpdr9iwcs2 original_connect
-#define ax6dp218ub pid
-#define t7vws7twwt printf
-#define u3pl2o11qz result
-#define t3s0mbwtav return
-#define jdy3aqstlk s
-#define hqg3xffbuh scanf
-#define is8p552i94 sizeof
-#define kz9faqa76q sockaddr
-#define w4pdxap7a7 std
-#define eom2xanqit target_pid
-#define v89uab2nw4 true
-#define q72nw2io55 using
-#define jo0lexe37h ws2
+#define n8phufhyhn BOOL
+#define n7ogk8xj4u BYTE
+#define j1a4cjlfd1 DWORD
+#define gl3qhg9dvz FALSE
+#define xzl9ckdox8 GetCurrentProcessId
+#define nquog202re GetProcAddress
+#define jfgjespumt HMODULE
+#define g1fo1wpma9 HookedConnect
+#define gs3s7wnm23 LPVOID
+#define xzx8bcgucb LoadLibrary
+#define dg6phcl4n7 PAGE_EXECUTE_READWRITE
+#define qogl06mnz4 RemoveHook
+#define iike1h8smr SOCKET
+#define ct73q9hic9 SOCKET_ERROR
+#define yrqibq7p7l SetHook
+#define npqetr5091 TRUE
+#define xen91a7qzj VirtualProtect
+#define d4hv6uluk0 WINAPI
+#define yo47vplzl1 WSAEACCES
+#define wiivntll4f WSASetLastError
+#define o3qpchl0f1 bool
+#define ttgmiw5w3a cerr
+#define f3orxj76pm cin
+#define uodqju3xz4 const
+#define rejuyo9gp0 cout
+#define vceu4tzuj6 else
+#define t0jxudq3z0 endl
+#define ylr69e0fia false
+#define rr66x267ft g_originalBytes
+#define kldy8z8tr0 g_pOriginalConnect
+#define knrvesjm8t g_targetPid
+#define hvn7ygrxi9 get
+#define hnpiejxay1 getchar
+#define trzves36wc hWs2
+#define w8r02saeye hooked_connect
+#define fdrg3vnd2t if
+#define apjbme3b02 ignore
+#define fsirf12xuw int
+#define kooigg9joq jmp
+#define jii4ye4wel main_nwb
+#define zlwtxo6u00 memcpy
+#define fgwl3gxhx2 memset
+#define r7lcthdlwc name
+#define pz7r903pt3 namelen
+#define bts8o1k141 namespace
+#define c2if6d0pzp nullptr
+#define n8bq2y1z4m nwb
+#define yt92m1l5cb nwb_old
+#define h2c3xo0p7l oldProtect
+#define s22qqt6pl2 old_protect
+#define a3j5d48bsm original_bytes
+#define q3golg4e5i original_connect
+#define mwvybgcqjz pid
+#define tzwzf4z13x printf
+#define xzoojakykb result
+#define n3e8qtcpc9 return
+#define sgzq67ktk7 s
+#define c8uimyhsh4 scanf
+#define vaguh2tzo6 sizeof
+#define vidss7y8fp sockaddr
+#define oq7zsn5kdr std
+#define elxspva3xm target_pid
+#define b9majxoeff true
+#define c51pglmcvv using
+#define aa8l1qnnge ws2
 #include <bits/stdc++.h>
 #include <winsock2.h>
 #include <windows.h>
@@ -73,154 +73,37 @@
 //-lpsapi -lws2_32
 //天下控屏，唯钩不破 
 //NetworkBlocker
-q72nw2io55 knzuq5esra w4pdxap7a7;
-knzuq5esra v8mqhtqhyq{
-w539bauaeu n5qf1jm40w = 0;
-whw8fvasp4 t0nb6tc3ss[5];
-rrc49xghzi (x1espdvped *h1hqiyugmt)(ltdm62qezz, e5i3twlwkh kz9faqa76q*, rrc49xghzi) = h29z8iitq9;
-rrc49xghzi x1espdvped nksceenzfw(ltdm62qezz jdy3aqstlk, e5i3twlwkh kz9faqa76q* cjondz2x6u, rrc49xghzi raat6i3pjz) {
- y2fd2rulmw (qcto86r2c5() == n5qf1jm40w) {
- cc57o847qa(kmni2j2qo1);
- t3s0mbwtav ax07vebnus;
- }
- ofzv15nweo(t0nb6tc3ss,0,is8p552i94 t0nb6tc3ss);
- // 恢复原始函数
- w539bauaeu icp647z0xo;
- vwmcciwjgt((z8g5sga4w6)h1hqiyugmt, 5, jupczpb5f6, &icp647z0xo);
- xhger04dmd((z8g5sga4w6)h1hqiyugmt, t0nb6tc3ss, 5);
- vwmcciwjgt((z8g5sga4w6)h1hqiyugmt, 5, icp647z0xo, &icp647z0xo);
+c51pglmcvv bts8o1k141 oq7zsn5kdr; bts8o1k141 yt92m1l5cb{ j1a4cjlfd1 knrvesjm8t = 0; n7ogk8xj4u rr66x267ft[5]; fsirf12xuw (d4hv6uluk0 *kldy8z8tr0)(iike1h8smr, uodqju3xz4 vidss7y8fp*, fsirf12xuw) = c2if6d0pzp;
+fsirf12xuw d4hv6uluk0 g1fo1wpma9(iike1h8smr sgzq67ktk7, uodqju3xz4 vidss7y8fp* r7lcthdlwc, fsirf12xuw pz7r903pt3) {  fdrg3vnd2t (xzl9ckdox8() == knrvesjm8t) {
+ wiivntll4f(yo47vplzl1);  n3e8qtcpc9 ct73q9hic9;  }  fgwl3gxhx2(rr66x267ft,0,vaguh2tzo6 rr66x267ft);  // 恢复原始函数
+ j1a4cjlfd1 h2c3xo0p7l;  xen91a7qzj((gs3s7wnm23)kldy8z8tr0, 5, dg6phcl4n7, &h2c3xo0p7l);  zlwtxo6u00((gs3s7wnm23)kldy8z8tr0, rr66x267ft, 5);  xen91a7qzj((gs3s7wnm23)kldy8z8tr0, 5, h2c3xo0p7l, &h2c3xo0p7l);
  // 调用原始函数
- rrc49xghzi u3pl2o11qz = h1hqiyugmt(jdy3aqstlk, cjondz2x6u, raat6i3pjz);
- // 重新设置钩子
- vwmcciwjgt((z8g5sga4w6)h1hqiyugmt, 5, jupczpb5f6, &icp647z0xo);
- whw8fvasp4 q2gvyjys37[5] = { 0xE9 };
- *(w539bauaeu*)(q2gvyjys37 + 1) = (w539bauaeu)nksceenzfw - (w539bauaeu)h1hqiyugmt - 5;
- xhger04dmd((z8g5sga4w6)h1hqiyugmt, q2gvyjys37, 5);
- vwmcciwjgt((z8g5sga4w6)h1hqiyugmt, 5, icp647z0xo, &icp647z0xo);
- t3s0mbwtav u3pl2o11qz;
-}
-amyzjvx1rg zmh2qbl05j(w539bauaeu ax6dp218ub) {
- n5qf1jm40w = ax6dp218ub;
- ig2eljocgb lr7667gdmc = f29rz37sb8("ws2_32.dll");
- y2fd2rulmw (!lr7667gdmc) t3s0mbwtav trsd2xo21w;
- h1hqiyugmt = (rrc49xghzi(x1espdvped*)(ltdm62qezz, e5i3twlwkh kz9faqa76q*, rrc49xghzi))kkjf46lx71(lr7667gdmc, "connect");
- y2fd2rulmw (!h1hqiyugmt) t3s0mbwtav trsd2xo21w;
- // 保存原始字节
- xhger04dmd(t0nb6tc3ss, (z8g5sga4w6)h1hqiyugmt, 5);
- // 修改内存保护属性
- w539bauaeu icp647z0xo;
- y2fd2rulmw (!vwmcciwjgt((z8g5sga4w6)h1hqiyugmt, 5, jupczpb5f6, &icp647z0xo))
- t3s0mbwtav trsd2xo21w;
- // 写入跳转指令
- whw8fvasp4 q2gvyjys37[5] = { 0xE9 };
- *(w539bauaeu*)(q2gvyjys37 + 1) = (w539bauaeu)nksceenzfw - (w539bauaeu)h1hqiyugmt - 5;
- xhger04dmd((z8g5sga4w6)h1hqiyugmt, q2gvyjys37, 5);
- vwmcciwjgt((z8g5sga4w6)h1hqiyugmt, 5, icp647z0xo, &icp647z0xo);
- t3s0mbwtav fd3yop0zyv;
-}
-amyzjvx1rg esokfycy4u() {
- y2fd2rulmw (!h1hqiyugmt) t3s0mbwtav fd3yop0zyv;
- w539bauaeu icp647z0xo;
- vwmcciwjgt((z8g5sga4w6)h1hqiyugmt, 5, jupczpb5f6, &icp647z0xo);
- xhger04dmd((z8g5sga4w6)h1hqiyugmt, t0nb6tc3ss, 5);
- vwmcciwjgt((z8g5sga4w6)h1hqiyugmt, 5, icp647z0xo, &icp647z0xo);
- h1hqiyugmt = h29z8iitq9;
- t3s0mbwtav fd3yop0zyv;
-}
-rrc49xghzi ifhyks2hjr() {
- w539bauaeu ax6dp218ub;
- t7vws7twwt("Enter PID to block: ");
- hqg3xffbuh("%d", &ax6dp218ub);
- y2fd2rulmw (zmh2qbl05j(ax6dp218ub)) {
- t7vws7twwt("Network access blocked for PID %d\n", ax6dp218ub);
- t7vws7twwt("Press any key to unblock...\n");
- pyrn3y8sjw();
- esokfycy4u();
- } zvwnssomx8 {
- t7vws7twwt("Failed to block PID %d\n", ax6dp218ub);
- }
- t3s0mbwtav 0;
-}
-}
-
-#include <windows.h>
+ fsirf12xuw xzoojakykb = kldy8z8tr0(sgzq67ktk7, r7lcthdlwc, pz7r903pt3);  // 重新设置钩子
+ xen91a7qzj((gs3s7wnm23)kldy8z8tr0, 5, dg6phcl4n7, &h2c3xo0p7l);  n7ogk8xj4u kooigg9joq[5] = { 0xE9 };  *(j1a4cjlfd1*)(kooigg9joq + 1) = (j1a4cjlfd1)g1fo1wpma9 - (j1a4cjlfd1)kldy8z8tr0 - 5;
+ zlwtxo6u00((gs3s7wnm23)kldy8z8tr0, kooigg9joq, 5);  xen91a7qzj((gs3s7wnm23)kldy8z8tr0, 5, h2c3xo0p7l, &h2c3xo0p7l);  n3e8qtcpc9 xzoojakykb; } n8phufhyhn yrqibq7p7l(j1a4cjlfd1 mwvybgcqjz) {
+ knrvesjm8t = mwvybgcqjz;  jfgjespumt trzves36wc = xzx8bcgucb("ws2_32.dll");  fdrg3vnd2t (!trzves36wc) n3e8qtcpc9 gl3qhg9dvz;  kldy8z8tr0 = (fsirf12xuw(d4hv6uluk0*)(iike1h8smr, uodqju3xz4 vidss7y8fp*, fsirf12xuw))nquog202re(trzves36wc, "connect");
+ fdrg3vnd2t (!kldy8z8tr0) n3e8qtcpc9 gl3qhg9dvz;  // 保存原始字节
+ zlwtxo6u00(rr66x267ft, (gs3s7wnm23)kldy8z8tr0, 5);  // 修改内存保护属性
+ j1a4cjlfd1 h2c3xo0p7l;  fdrg3vnd2t (!xen91a7qzj((gs3s7wnm23)kldy8z8tr0, 5, dg6phcl4n7, &h2c3xo0p7l))  n3e8qtcpc9 gl3qhg9dvz;  // 写入跳转指令
+ n7ogk8xj4u kooigg9joq[5] = { 0xE9 };  *(j1a4cjlfd1*)(kooigg9joq + 1) = (j1a4cjlfd1)g1fo1wpma9 - (j1a4cjlfd1)kldy8z8tr0 - 5;  zlwtxo6u00((gs3s7wnm23)kldy8z8tr0, kooigg9joq, 5);
+ xen91a7qzj((gs3s7wnm23)kldy8z8tr0, 5, h2c3xo0p7l, &h2c3xo0p7l);  n3e8qtcpc9 npqetr5091; } n8phufhyhn qogl06mnz4() {  fdrg3vnd2t (!kldy8z8tr0) n3e8qtcpc9 npqetr5091;
+ j1a4cjlfd1 h2c3xo0p7l;  xen91a7qzj((gs3s7wnm23)kldy8z8tr0, 5, dg6phcl4n7, &h2c3xo0p7l);  zlwtxo6u00((gs3s7wnm23)kldy8z8tr0, rr66x267ft, 5);  xen91a7qzj((gs3s7wnm23)kldy8z8tr0, 5, h2c3xo0p7l, &h2c3xo0p7l);
+ kldy8z8tr0 = c2if6d0pzp;  n3e8qtcpc9 npqetr5091; } fsirf12xuw jii4ye4wel() {  j1a4cjlfd1 mwvybgcqjz;  tzwzf4z13x("Enter PID to block: ");  c8uimyhsh4("%d", &mwvybgcqjz);
+ fdrg3vnd2t (yrqibq7p7l(mwvybgcqjz)) {  tzwzf4z13x("Network access blocked for PID %d\n", mwvybgcqjz);  tzwzf4z13x("Press any key to unblock...\n");  hnpiejxay1();
+ qogl06mnz4();  } vceu4tzuj6 {  tzwzf4z13x("Failed to block PID %d\n", mwvybgcqjz);  }  n3e8qtcpc9 0; } } #include <windows.h>
 #include <winsock2.h>
 #include <iostream>
-
-knzuq5esra zlwlhopgnk {
-w539bauaeu eom2xanqit = 0;
-whw8fvasp4 me9a95fsmv[5];
-rrc49xghzi (x1espdvped *lpdr9iwcs2)(ltdm62qezz, e5i3twlwkh kz9faqa76q*, rrc49xghzi) = h29z8iitq9;
-
-rrc49xghzi x1espdvped yplxcpbs3f(ltdm62qezz jdy3aqstlk, e5i3twlwkh kz9faqa76q* cjondz2x6u, rrc49xghzi raat6i3pjz) {
-y2fd2rulmw (qcto86r2c5() == eom2xanqit) {
-cc57o847qa(kmni2j2qo1);
-t3s0mbwtav ax07vebnus;
-}
-
-w539bauaeu dtd5s2mcof;
-vwmcciwjgt((z8g5sga4w6)lpdr9iwcs2, 5, jupczpb5f6, &dtd5s2mcof);
-xhger04dmd((z8g5sga4w6)lpdr9iwcs2, me9a95fsmv, 5);
-vwmcciwjgt((z8g5sga4w6)lpdr9iwcs2, 5, dtd5s2mcof, &dtd5s2mcof);
-
-rrc49xghzi u3pl2o11qz = lpdr9iwcs2(jdy3aqstlk, cjondz2x6u, raat6i3pjz);
-
-vwmcciwjgt((z8g5sga4w6)lpdr9iwcs2, 5, jupczpb5f6, &dtd5s2mcof);
-whw8fvasp4 q2gvyjys37[5] = {0xE9};
-*(w539bauaeu*)(q2gvyjys37+1) = (w539bauaeu)yplxcpbs3f - (w539bauaeu)lpdr9iwcs2 - 5;
-xhger04dmd((z8g5sga4w6)lpdr9iwcs2, q2gvyjys37, 5);
-vwmcciwjgt((z8g5sga4w6)lpdr9iwcs2, 5, dtd5s2mcof, &dtd5s2mcof);
-
-t3s0mbwtav u3pl2o11qz;
-}
-
-qwq9v9xkhm zmh2qbl05j(w539bauaeu ax6dp218ub) {
-eom2xanqit = ax6dp218ub;
-ig2eljocgb jo0lexe37h = f29rz37sb8("ws2_32.dll");
-y2fd2rulmw (!jo0lexe37h) t3s0mbwtav j3axw6uwr1;
-
-lpdr9iwcs2 = (rrc49xghzi(x1espdvped*)(ltdm62qezz, e5i3twlwkh kz9faqa76q*, rrc49xghzi))kkjf46lx71(jo0lexe37h, "connect");
-y2fd2rulmw (!lpdr9iwcs2) t3s0mbwtav j3axw6uwr1;
-
-xhger04dmd((z8g5sga4w6)me9a95fsmv, (z8g5sga4w6)lpdr9iwcs2, 5);
-
-w539bauaeu dtd5s2mcof;
-y2fd2rulmw (!vwmcciwjgt((z8g5sga4w6)lpdr9iwcs2, 5, jupczpb5f6, &dtd5s2mcof))
-t3s0mbwtav j3axw6uwr1;
-
-whw8fvasp4 q2gvyjys37[5] = {0xE9};
-*(w539bauaeu*)(q2gvyjys37+1) = (w539bauaeu)yplxcpbs3f - (w539bauaeu)lpdr9iwcs2 - 5;
-xhger04dmd((z8g5sga4w6)lpdr9iwcs2, q2gvyjys37, 5);
-vwmcciwjgt((z8g5sga4w6)lpdr9iwcs2, 5, dtd5s2mcof, &dtd5s2mcof);
-
-t3s0mbwtav v89uab2nw4;
-}
-
-qwq9v9xkhm esokfycy4u() {
-y2fd2rulmw (!lpdr9iwcs2) t3s0mbwtav v89uab2nw4;
-
-w539bauaeu dtd5s2mcof;
-vwmcciwjgt((z8g5sga4w6)lpdr9iwcs2, 5, jupczpb5f6, &dtd5s2mcof);
-xhger04dmd((z8g5sga4w6)lpdr9iwcs2, me9a95fsmv, 5);
-vwmcciwjgt((z8g5sga4w6)lpdr9iwcs2, 5, dtd5s2mcof, &dtd5s2mcof);
-
-lpdr9iwcs2 = h29z8iitq9;
-t3s0mbwtav v89uab2nw4;
-}
-rrc49xghzi ifhyks2hjr() {
-mp4gt1yhwk << "Enter PID to block: ";
-w539bauaeu ax6dp218ub;
-gysc6xyfv2 >> ax6dp218ub;
-y2fd2rulmw (zmh2qbl05j(ax6dp218ub)) {
-mp4gt1yhwk << "Network blocked for PID "<< ax6dp218ub << b5bou6u2mx;
-mp4gt1yhwk << "Press enter to unblock...";
-gysc6xyfv2.i6d4tkre8o();
-gysc6xyfv2.mfpyd2824g();
-esokfycy4u();
-} zvwnssomx8 {
-x7w5p9wt2i << "Failed to block PID "<< ax6dp218ub << b5bou6u2mx;
-}
-t3s0mbwtav 0;
-}
-}
-
+bts8o1k141 n8bq2y1z4m { j1a4cjlfd1 elxspva3xm = 0; n7ogk8xj4u a3j5d48bsm[5]; fsirf12xuw (d4hv6uluk0 *q3golg4e5i)(iike1h8smr, uodqju3xz4 vidss7y8fp*, fsirf12xuw) = c2if6d0pzp;
+fsirf12xuw d4hv6uluk0 w8r02saeye(iike1h8smr sgzq67ktk7, uodqju3xz4 vidss7y8fp* r7lcthdlwc, fsirf12xuw pz7r903pt3) { fdrg3vnd2t (xzl9ckdox8() == elxspva3xm) {
+wiivntll4f(yo47vplzl1); n3e8qtcpc9 ct73q9hic9; } j1a4cjlfd1 s22qqt6pl2; xen91a7qzj((gs3s7wnm23)q3golg4e5i, 5, dg6phcl4n7, &s22qqt6pl2); zlwtxo6u00((gs3s7wnm23)q3golg4e5i, a3j5d48bsm, 5);
+xen91a7qzj((gs3s7wnm23)q3golg4e5i, 5, s22qqt6pl2, &s22qqt6pl2); fsirf12xuw xzoojakykb = q3golg4e5i(sgzq67ktk7, r7lcthdlwc, pz7r903pt3); xen91a7qzj((gs3s7wnm23)q3golg4e5i, 5, dg6phcl4n7, &s22qqt6pl2);
+n7ogk8xj4u kooigg9joq[5] = {0xE9}; *(j1a4cjlfd1*)(kooigg9joq+1) = (j1a4cjlfd1)w8r02saeye - (j1a4cjlfd1)q3golg4e5i - 5; zlwtxo6u00((gs3s7wnm23)q3golg4e5i, kooigg9joq, 5);
+xen91a7qzj((gs3s7wnm23)q3golg4e5i, 5, s22qqt6pl2, &s22qqt6pl2); n3e8qtcpc9 xzoojakykb; } o3qpchl0f1 yrqibq7p7l(j1a4cjlfd1 mwvybgcqjz) { elxspva3xm = mwvybgcqjz;
+jfgjespumt aa8l1qnnge = xzx8bcgucb("ws2_32.dll"); fdrg3vnd2t (!aa8l1qnnge) n3e8qtcpc9 ylr69e0fia; q3golg4e5i = (fsirf12xuw(d4hv6uluk0*)(iike1h8smr, uodqju3xz4 vidss7y8fp*, fsirf12xuw))nquog202re(aa8l1qnnge, "connect");
+fdrg3vnd2t (!q3golg4e5i) n3e8qtcpc9 ylr69e0fia; zlwtxo6u00((gs3s7wnm23)a3j5d48bsm, (gs3s7wnm23)q3golg4e5i, 5); j1a4cjlfd1 s22qqt6pl2; fdrg3vnd2t (!xen91a7qzj((gs3s7wnm23)q3golg4e5i, 5, dg6phcl4n7, &s22qqt6pl2))
+n3e8qtcpc9 ylr69e0fia; n7ogk8xj4u kooigg9joq[5] = {0xE9}; *(j1a4cjlfd1*)(kooigg9joq+1) = (j1a4cjlfd1)w8r02saeye - (j1a4cjlfd1)q3golg4e5i - 5; zlwtxo6u00((gs3s7wnm23)q3golg4e5i, kooigg9joq, 5);
+xen91a7qzj((gs3s7wnm23)q3golg4e5i, 5, s22qqt6pl2, &s22qqt6pl2); n3e8qtcpc9 b9majxoeff; } o3qpchl0f1 qogl06mnz4() { fdrg3vnd2t (!q3golg4e5i) n3e8qtcpc9 b9majxoeff;
+j1a4cjlfd1 s22qqt6pl2; xen91a7qzj((gs3s7wnm23)q3golg4e5i, 5, dg6phcl4n7, &s22qqt6pl2); zlwtxo6u00((gs3s7wnm23)q3golg4e5i, a3j5d48bsm, 5); xen91a7qzj((gs3s7wnm23)q3golg4e5i, 5, s22qqt6pl2, &s22qqt6pl2);
+q3golg4e5i = c2if6d0pzp; n3e8qtcpc9 b9majxoeff; } fsirf12xuw jii4ye4wel() { rejuyo9gp0 << "Enter PID to block: "; j1a4cjlfd1 mwvybgcqjz; f3orxj76pm >> mwvybgcqjz;
+fdrg3vnd2t (yrqibq7p7l(mwvybgcqjz)) { rejuyo9gp0 << "Network blocked for PID "<< mwvybgcqjz << t0jxudq3z0; rejuyo9gp0 << "Press enter to unblock..."; f3orxj76pm.apjbme3b02();
+f3orxj76pm.hvn7ygrxi9(); qogl06mnz4(); } vceu4tzuj6 { ttgmiw5w3a << "Failed to block PID "<< mwvybgcqjz << t0jxudq3z0; } n3e8qtcpc9 0; } } 
